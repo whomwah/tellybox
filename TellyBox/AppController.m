@@ -49,8 +49,9 @@
 	[super dealloc];
 }
 
-- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)app {
-  return YES;
+- (void)applicationDidUnhide:(NSNotification *)aNotification
+{
+  [drMainWindowController redrawEmp];
 }
 
 - (IBAction)refreshStation:(id)sender

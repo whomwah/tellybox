@@ -239,4 +239,9 @@ NSString * const DSRStations = @"Stations";
                              clickContext:nil];
 }
 
+- (void)redrawEmp
+{
+  [[drEmpViewController view] setNeedsDisplay:YES];  
+}
+
 @end
