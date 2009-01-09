@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="465"/>
+			<integer value="455"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -155,14 +155,14 @@
 					</object>
 					<object class="NSMenuItem" id="235023648">
 						<reference key="NSMenu" ref="595109146"/>
-						<string key="NSTitle">Listen</string>
+						<string key="NSTitle">Watch</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="418886892"/>
 						<reference key="NSMixedImage" ref="141874739"/>
 						<string key="NSAction">submenuAction:</string>
 						<object class="NSMenu" key="NSSubmenu" id="1028892568">
-							<string key="NSTitle">Listen</string>
+							<string key="NSTitle">Watch</string>
 							<object class="NSMutableArray" key="NSMenuItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSMenuItem" id="570634620">

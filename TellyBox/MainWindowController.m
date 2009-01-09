@@ -143,7 +143,7 @@ NSString * const DSRStations = @"Stations";
 - (void)buildStationsMenu
 {
   NSMenuItem *newItem;
-  NSMenu *listenMenu = [[[NSApp mainMenu] itemWithTitle:@"Listen"] submenu];
+  NSMenu *listenMenu = [[[NSApp mainMenu] itemWithTitle:@"Watch"] submenu];
   NSEnumerator *enumerator = [stations objectEnumerator];
   int count = 0;
   

@@ -19,6 +19,20 @@
 			AEA8284F0F16AC5D0036F466 /* TellyBox */,
 		);
 		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					544,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -63,12 +77,11 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 253194476;
-			PBXWorkspaceStateSaveDate = 253194476;
+			PBXPerProjectTemplateStateSaveDate = 253195425;
+			PBXWorkspaceStateSaveDate = 253195425;
 		};
 		perUserProjectItems = {
 			AE1BFB9C0F173DCF006ED3DF /* PBXTextBookmark */ = AE1BFB9C0F173DCF006ED3DF /* PBXTextBookmark */;
-			AE1BFBAB0F173E1F006ED3DF /* PBXTextBookmark */ = AE1BFBAB0F173E1F006ED3DF /* PBXTextBookmark */;
 			AE215D360F16B385000E7B70 /* PBXTextBookmark */ = AE215D360F16B385000E7B70 /* PBXTextBookmark */;
 			AE215D380F16B385000E7B70 /* PlistBookmark */ = AE215D380F16B385000E7B70 /* PlistBookmark */;
 			AE215D390F16B385000E7B70 /* PBXTextBookmark */ = AE215D390F16B385000E7B70 /* PBXTextBookmark */;
@@ -93,9 +106,12 @@
 			AE215D9F0F16B65D000E7B70 /* PBXTextBookmark */ = AE215D9F0F16B65D000E7B70 /* PBXTextBookmark */;
 			AE215DA00F16B65D000E7B70 /* PBXTextBookmark */ = AE215DA00F16B65D000E7B70 /* PBXTextBookmark */;
 			AE215DAE0F16B6CC000E7B70 /* PBXTextBookmark */ = AE215DAE0F16B6CC000E7B70 /* PBXTextBookmark */;
+			AE5051F20F17774E00CA73F5 /* PBXTextBookmark */ = AE5051F20F17774E00CA73F5 /* PBXTextBookmark */;
+			AE5051F30F17774E00CA73F5 /* PBXTextBookmark */ = AE5051F30F17774E00CA73F5 /* PBXTextBookmark */;
+			AE5051F70F17777600CA73F5 /* PBXTextBookmark */ = AE5051F70F17777600CA73F5 /* PBXTextBookmark */;
+			AE5051FE0F17778600CA73F5 /* PBXTextBookmark */ = AE5051FE0F17778600CA73F5 /* PBXTextBookmark */;
 			AEA828650F16AD120036F466 /* PBXTextBookmark */ = AEA828650F16AD120036F466 /* PBXTextBookmark */;
 			AEA828670F16AD120036F466 /* PBXTextBookmark */ = AEA828670F16AD120036F466 /* PBXTextBookmark */;
-			AEAF089E0F1770F400AD9116 /* PBXTextBookmark */ = AEAF089E0F1770F400AD9116 /* PBXTextBookmark */;
 			AEDCF89B0F1756EC00B0585B /* PBXTextBookmark */ = AEDCF89B0F1756EC00B0585B /* PBXTextBookmark */;
 			AEDCF9830F176ED000B0585B /* PBXTextBookmark */ = AEDCF9830F176ED000B0585B /* PBXTextBookmark */;
 			AEDCF9850F176ED000B0585B /* PBXTextBookmark */ = AEDCF9850F176ED000B0585B /* PBXTextBookmark */;
@@ -103,7 +119,6 @@
 			AEDCF9950F176F0700B0585B /* PBXTextBookmark */ = AEDCF9950F176F0700B0585B /* PBXTextBookmark */;
 			AEDCF99E0F176F4900B0585B /* PBXTextBookmark */ = AEDCF99E0F176F4900B0585B /* PBXTextBookmark */;
 			AEDCF9A60F17700F00B0585B /* PlistBookmark */ = AEDCF9A60F17700F00B0585B /* PlistBookmark */;
-			AEDCF9AA0F17700F00B0585B /* PBXTextBookmark */ = AEDCF9AA0F17700F00B0585B /* PBXTextBookmark */;
 		};
 		sourceControlManager = AEA828610F16AC610036F466 /* Source Control */;
 		userBuildSettings = {
@@ -132,21 +147,11 @@
 		vrLen = 843;
 		vrLoc = 0;
 	};
-	AE1BFBAB0F173E1F006ED3DF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = AE215D2D0F16B201000E7B70 /* MainWindowController.m */;
-		name = "MainWindowController.m: 19";
-		rLen = 0;
-		rLoc = 436;
-		rType = 0;
-		vrLen = 1146;
-		vrLoc = 7536;
-	};
 	AE215D2A0F16B201000E7B70 /* EmpViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {832, 617}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1060, 560}}";
 			sepNavSelRange = "{190, 0}";
-			sepNavVisRange = "{0, 1230}";
+			sepNavVisRange = "{0, 0}";
 		};
 	};
 	AE215D2B0F16B201000E7B70 /* EmpViewController.m */ = {
@@ -165,9 +170,9 @@
 	};
 	AE215D2D0F16B201000E7B70 /* MainWindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1060, 3360}}";
-			sepNavSelRange = "{436, 0}";
-			sepNavVisRange = "{0, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 3416}}";
+			sepNavSelRange = "{4904, 0}";
+			sepNavVisRange = "{4361, 1388}";
 		};
 	};
 	AE215D360F16B385000E7B70 /* PBXTextBookmark */ = {
@@ -465,6 +470,46 @@
 		vrLen = 1404;
 		vrLoc = 1913;
 	};
+	AE5051F20F17774E00CA73F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AE215D2A0F16B201000E7B70 /* EmpViewController.h */;
+		name = "EmpViewController.h: 11";
+		rLen = 0;
+		rLoc = 190;
+		rType = 0;
+		vrLen = 1230;
+		vrLoc = 0;
+	};
+	AE5051F30F17774E00CA73F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AE215D2A0F16B201000E7B70 /* EmpViewController.h */;
+		name = "EmpViewController.h: 11";
+		rLen = 0;
+		rLoc = 190;
+		rType = 0;
+		vrLen = 1230;
+		vrLoc = 0;
+	};
+	AE5051F70F17777600CA73F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AE215D2D0F16B201000E7B70 /* MainWindowController.m */;
+		name = "MainWindowController.m: 19";
+		rLen = 0;
+		rLoc = 436;
+		rType = 0;
+		vrLen = 1859;
+		vrLoc = 6823;
+	};
+	AE5051FE0F17778600CA73F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AE215D2D0F16B201000E7B70 /* MainWindowController.m */;
+		name = "MainWindowController.m: 146";
+		rLen = 0;
+		rLoc = 4904;
+		rType = 0;
+		vrLen = 1388;
+		vrLoc = 4361;
+	};
 	AEA8284F0F16AC5D0036F466 /* TellyBox */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -550,16 +595,6 @@
 			sepNavVisRange = "{1598, 1061}";
 		};
 	};
-	AEAF089E0F1770F400AD9116 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = AE215D2A0F16B201000E7B70 /* EmpViewController.h */;
-		name = "EmpViewController.h: 11";
-		rLen = 0;
-		rLoc = 190;
-		rType = 0;
-		vrLen = 1230;
-		vrLoc = 0;
-	};
 	AEDCF89B0F1756EC00B0585B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = AEA828940F16B0180036F466 /* AppController.m */;
@@ -630,15 +665,5 @@
 		name = /Users/duncan/_checkouts/git/tellybox/TellyBox/Stations.plist;
 		rLen = 0;
 		rLoc = 2147483647;
-	};
-	AEDCF9AA0F17700F00B0585B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = AE215D2A0F16B201000E7B70 /* EmpViewController.h */;
-		name = "EmpViewController.h: 11";
-		rLen = 0;
-		rLoc = 190;
-		rType = 0;
-		vrLen = 1230;
-		vrLoc = 0;
 	};
 }
