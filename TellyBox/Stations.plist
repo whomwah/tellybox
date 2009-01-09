@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultStation</key>
+	<integer>0</integer>
+	<key>Stations</key>
+	<array>
+		<dict>
+			<key>key</key>
+			<string>bbcone</string>
+			<key>outlet</key>
+			<string>london</string>
+			<key>label</key>
+			<string>BBC One</string>
+			<key>empKey</key>
+			<string>bbc_one_london</string>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>bbctwo</string>
+			<key>outlet</key>
+			<string>england</string>
+			<key>label</key>
+			<string>BBC Two</string>
+			<key>empKey</key>
+			<string>bbc_two_england</string>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>bbcthree</string>
+			<key>label</key>
+			<string>BBC Three</string>
+			<key>empKey</key>
+			<string>bbc_three</string>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>bbcfour</string>
+			<key>label</key>
+			<string>BBC Four</string>
+			<key>empKey</key>
+			<string>bbc_four</string>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>cbbc</string>
+			<key>label</key>
+			<string>CBBC</string>
+			<key>empKey</key>
+			<string>cbbc</string>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>cbeebies</string>
+			<key>label</key>
+			<string>CBeebies</string>
+			<key>empKey</key>
+			<string>cbeebies</string>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>bbcnews</string>
+			<key>label</key>
+			<string>BBC News Channel</string>
+			<key>empKey</key>
+			<string>bbc_news24</string>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>parliament</string>
+			<key>label</key>
+			<string>BBC Parliament</string>
+			<key>empKey</key>
+			<string>bbc_parliament</string>
+		</dict>
+	</array>
+</dict>
+</plist>

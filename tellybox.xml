@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <channel>
+      <title>TellyBox Changelog</title>
+      <link>http://github.com/whomwah/tellybox/raw/master/tellybox.xml</link>
+      <description>Most recent changes with links to updates.</description>
+      <language>en</language>
+         <item>
+            <title>Version 1.0 (initial release)</title>
+						<sparkle:releaseNotesLink>
+              http://github.com/whomwah/tellybox/raw/master/CHANGELOG
+						</sparkle:releaseNotesLink>
+            <pubDate>Fri, 1 Jan 2008 19:00:00 +0000</pubDate>
+            <enclosure url="http://github.com/whomwah/" sparkle:version="1.0" length="" type="application/octet-stream" sparkle:dsaSignature="" />
+         </item>
+   </channel>
+</rss>

@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		AE215D250F16B1B4000E7B70 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEA828CE0F16B0BE0036F466 /* Growl.framework */; };
+		AE215D260F16B1B4000E7B70 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEA828CF0F16B0BE0036F466 /* Sparkle.framework */; };
+		AE215D2E0F16B201000E7B70 /* EmpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D2B0F16B201000E7B70 /* EmpViewController.m */; };
+		AE215D2F0F16B201000E7B70 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D2D0F16B201000E7B70 /* MainWindowController.m */; };
+		AE215D550F16B3F0000E7B70 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D500F16B3F0000E7B70 /* Schedule.m */; };
+		AE215D560F16B3F0000E7B70 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D520F16B3F0000E7B70 /* Service.m */; };
+		AE215D570F16B3F0000E7B70 /* Broadcast.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D540F16B3F0000E7B70 /* Broadcast.m */; };
+		AE215D6F0F16B48A000E7B70 /* live.html in Resources */ = {isa = PBXBuildFile; fileRef = AE215D6D0F16B48A000E7B70 /* live.html */; };
+		AE215D700F16B48A000E7B70 /* emp.html in Resources */ = {isa = PBXBuildFile; fileRef = AE215D6E0F16B48A000E7B70 /* emp.html */; };
+		AEA828870F16B0070036F466 /* NSString-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA828860F16B0070036F466 /* NSString-Utilities.m */; };
+		AEA8289F0F16B0180036F466 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA828940F16B0180036F466 /* AppController.m */; };
+		AEA828A20F16B0180036F466 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA8289A0F16B0180036F466 /* PreferencesWindowController.m */; };
+		AEA828AB0F16B0530036F466 /* bbcfour.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A30F16B0530036F466 /* bbcfour.gif */; };
+		AEA828AC0F16B0530036F466 /* bbcnews.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A40F16B0530036F466 /* bbcnews.gif */; };
+		AEA828AD0F16B0530036F466 /* bbcone.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A50F16B0530036F466 /* bbcone.gif */; };
+		AEA828AE0F16B0530036F466 /* bbcthree.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A60F16B0530036F466 /* bbcthree.gif */; };
+		AEA828AF0F16B0530036F466 /* bbctwo.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A70F16B0530036F466 /* bbctwo.gif */; };
+		AEA828B00F16B0530036F466 /* cbbc.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A80F16B0530036F466 /* cbbc.gif */; };
+		AEA828B10F16B0530036F466 /* cbeebies.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A90F16B0530036F466 /* cbeebies.gif */; };
+		AEA828B20F16B0530036F466 /* parliament.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828AA0F16B0530036F466 /* parliament.gif */; };
+		AEA828B70F16B0710036F466 /* radio.icns in Resources */ = {isa = PBXBuildFile; fileRef = AEA828B30F16B0710036F466 /* radio.icns */; };
+		AEA828B80F16B0710036F466 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = AEA828B40F16B0710036F466 /* dsa_pub.pem */; };
+		AEA828BA0F16B0710036F466 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = AEA828B60F16B0710036F466 /* Growl Registration Ticket.growlRegDict */; };
+		AEA828BC0F16B0990036F466 /* Stations.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA828BB0F16B0990036F466 /* Stations.plist */; };
+		AEA828C00F16B0AE0036F466 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA828BD0F16B0AE0036F466 /* MainWindow.xib */; };
+		AEA828C10F16B0AE0036F466 /* EmpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA828BE0F16B0AE0036F466 /* EmpView.xib */; };
+		AEA828C20F16B0AE0036F466 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA828BF0F16B0AE0036F466 /* Preferences.xib */; };
+		AEA828D00F16B0BE0036F466 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828CE0F16B0BE0036F466 /* Growl.framework */; };
+		AEA828D10F16B0BE0036F466 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828CF0F16B0BE0036F466 /* Sparkle.framework */; };
+		AEA828FB0F16B0D00036F466 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828FA0F16B0D00036F466 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE215D290F16B1D0000E7B70 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE215D250F16B1B4000E7B70 /* Growl.framework in CopyFiles */,
+				AE215D260F16B1B4000E7B70 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* TellyBox_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TellyBox_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* TellyBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TellyBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE215D2A0F16B201000E7B70 /* EmpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmpViewController.h; sourceTree = "<group>"; };
+		AE215D2B0F16B201000E7B70 /* EmpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmpViewController.m; sourceTree = "<group>"; };
+		AE215D2C0F16B201000E7B70 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		AE215D2D0F16B201000E7B70 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		AE215D4F0F16B3F0000E7B70 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		AE215D500F16B3F0000E7B70 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		AE215D510F16B3F0000E7B70 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		AE215D520F16B3F0000E7B70 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		AE215D530F16B3F0000E7B70 /* Broadcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broadcast.h; sourceTree = "<group>"; };
+		AE215D540F16B3F0000E7B70 /* Broadcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broadcast.m; sourceTree = "<group>"; };
+		AE215D6D0F16B48A000E7B70 /* live.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = live.html; sourceTree = "<group>"; };
+		AE215D6E0F16B48A000E7B70 /* emp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = emp.html; sourceTree = "<group>"; };
+		AEA828850F16B0070036F466 /* NSString-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-Utilities.h"; sourceTree = "<group>"; };
+		AEA828860F16B0070036F466 /* NSString-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-Utilities.m"; sourceTree = "<group>"; };
+		AEA828930F16B0180036F466 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		AEA828940F16B0180036F466 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		AEA828990F16B0180036F466 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
+		AEA8289A0F16B0180036F466 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
+		AEA828A30F16B0530036F466 /* bbcfour.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bbcfour.gif; sourceTree = "<group>"; };
+		AEA828A40F16B0530036F466 /* bbcnews.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bbcnews.gif; sourceTree = "<group>"; };
+		AEA828A50F16B0530036F466 /* bbcone.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bbcone.gif; sourceTree = "<group>"; };
+		AEA828A60F16B0530036F466 /* bbcthree.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bbcthree.gif; sourceTree = "<group>"; };
+		AEA828A70F16B0530036F466 /* bbctwo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bbctwo.gif; sourceTree = "<group>"; };
+		AEA828A80F16B0530036F466 /* cbbc.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cbbc.gif; sourceTree = "<group>"; };
+		AEA828A90F16B0530036F466 /* cbeebies.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cbeebies.gif; sourceTree = "<group>"; };
+		AEA828AA0F16B0530036F466 /* parliament.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = parliament.gif; sourceTree = "<group>"; };
+		AEA828B30F16B0710036F466 /* radio.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = radio.icns; sourceTree = "<group>"; };
+		AEA828B40F16B0710036F466 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		AEA828B60F16B0710036F466 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
+		AEA828BB0F16B0990036F466 /* Stations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stations.plist; sourceTree = "<group>"; };
+		AEA828BD0F16B0AE0036F466 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		AEA828BE0F16B0AE0036F466 /* EmpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmpView.xib; sourceTree = "<group>"; };
+		AEA828BF0F16B0AE0036F466 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		AEA828CE0F16B0BE0036F466 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		AEA828CF0F16B0BE0036F466 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		AEA828FA0F16B0D00036F466 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				AEA828D00F16B0BE0036F466 /* Growl.framework in Frameworks */,
+				AEA828D10F16B0BE0036F466 /* Sparkle.framework in Frameworks */,
+				AEA828FB0F16B0D00036F466 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEA828CE0F16B0BE0036F466 /* Growl.framework */,
+				AEA828CF0F16B0BE0036F466 /* Sparkle.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEA828FA0F16B0D00036F466 /* WebKit.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* TellyBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TellyBox */ = {
+			isa = PBXGroup;
+			children = (
+				AEA828920F16B0180036F466 /* Controllers */,
+				AEA8288F0F16B0180036F466 /* Views */,
+				AEA828880F16B0180036F466 /* Models */,
+				AEA828840F16B0070036F466 /* Categories */,
+				AEA828640F16AD0F0036F466 /* Images */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = TellyBox;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TellyBox_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE215D6D0F16B48A000E7B70 /* live.html */,
+				AE215D6E0F16B48A000E7B70 /* emp.html */,
+				AEA828BD0F16B0AE0036F466 /* MainWindow.xib */,
+				AEA828BE0F16B0AE0036F466 /* EmpView.xib */,
+				AEA828BF0F16B0AE0036F466 /* Preferences.xib */,
+				AEA828BB0F16B0990036F466 /* Stations.plist */,
+				AEA828B30F16B0710036F466 /* radio.icns */,
+				AEA828B40F16B0710036F466 /* dsa_pub.pem */,
+				AEA828B60F16B0710036F466 /* Growl Registration Ticket.growlRegDict */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEA828640F16AD0F0036F466 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AEA828A30F16B0530036F466 /* bbcfour.gif */,
+				AEA828A40F16B0530036F466 /* bbcnews.gif */,
+				AEA828A50F16B0530036F466 /* bbcone.gif */,
+				AEA828A60F16B0530036F466 /* bbcthree.gif */,
+				AEA828A70F16B0530036F466 /* bbctwo.gif */,
+				AEA828A80F16B0530036F466 /* cbbc.gif */,
+				AEA828A90F16B0530036F466 /* cbeebies.gif */,
+				AEA828AA0F16B0530036F466 /* parliament.gif */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AEA828840F16B0070036F466 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AEA828850F16B0070036F466 /* NSString-Utilities.h */,
+				AEA828860F16B0070036F466 /* NSString-Utilities.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		AEA828880F16B0180036F466 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE215D4F0F16B3F0000E7B70 /* Schedule.h */,
+				AE215D500F16B3F0000E7B70 /* Schedule.m */,
+				AE215D510F16B3F0000E7B70 /* Service.h */,
+				AE215D520F16B3F0000E7B70 /* Service.m */,
+				AE215D530F16B3F0000E7B70 /* Broadcast.h */,
+				AE215D540F16B3F0000E7B70 /* Broadcast.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AEA8288F0F16B0180036F466 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AEA828920F16B0180036F466 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE215D2A0F16B201000E7B70 /* EmpViewController.h */,
+				AE215D2B0F16B201000E7B70 /* EmpViewController.m */,
+				AE215D2C0F16B201000E7B70 /* MainWindowController.h */,
+				AE215D2D0F16B201000E7B70 /* MainWindowController.m */,
+				AEA828930F16B0180036F466 /* AppController.h */,
+				AEA828940F16B0180036F466 /* AppController.m */,
+				AEA828990F16B0180036F466 /* PreferencesWindowController.h */,
+				AEA8289A0F16B0180036F466 /* PreferencesWindowController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* TellyBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TellyBox" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				AE215D290F16B1D0000E7B70 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TellyBox;
+			productInstallPath = "$(HOME)/Applications";
+			productName = TellyBox;
+			productReference = 8D1107320486CEB800E47090 /* TellyBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TellyBox" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TellyBox */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* TellyBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				AEA828AB0F16B0530036F466 /* bbcfour.gif in Resources */,
+				AEA828AC0F16B0530036F466 /* bbcnews.gif in Resources */,
+				AEA828AD0F16B0530036F466 /* bbcone.gif in Resources */,
+				AEA828AE0F16B0530036F466 /* bbcthree.gif in Resources */,
+				AEA828AF0F16B0530036F466 /* bbctwo.gif in Resources */,
+				AEA828B00F16B0530036F466 /* cbbc.gif in Resources */,
+				AEA828B10F16B0530036F466 /* cbeebies.gif in Resources */,
+				AEA828B20F16B0530036F466 /* parliament.gif in Resources */,
+				AEA828B70F16B0710036F466 /* radio.icns in Resources */,
+				AEA828B80F16B0710036F466 /* dsa_pub.pem in Resources */,
+				AEA828BA0F16B0710036F466 /* Growl Registration Ticket.growlRegDict in Resources */,
+				AEA828BC0F16B0990036F466 /* Stations.plist in Resources */,
+				AEA828C00F16B0AE0036F466 /* MainWindow.xib in Resources */,
+				AEA828C10F16B0AE0036F466 /* EmpView.xib in Resources */,
+				AEA828C20F16B0AE0036F466 /* Preferences.xib in Resources */,
+				AE215D6F0F16B48A000E7B70 /* live.html in Resources */,
+				AE215D700F16B48A000E7B70 /* emp.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				AEA828870F16B0070036F466 /* NSString-Utilities.m in Sources */,
+				AEA8289F0F16B0180036F466 /* AppController.m in Sources */,
+				AEA828A20F16B0180036F466 /* PreferencesWindowController.m in Sources */,
+				AE215D2E0F16B201000E7B70 /* EmpViewController.m in Sources */,
+				AE215D2F0F16B201000E7B70 /* MainWindowController.m in Sources */,
+				AE215D550F16B3F0000E7B70 /* Schedule.m in Sources */,
+				AE215D560F16B3F0000E7B70 /* Service.m in Sources */,
+				AE215D570F16B3F0000E7B70 /* Broadcast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TellyBox_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = TellyBox;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TellyBox_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = TellyBox;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TellyBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TellyBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
