@@ -44,6 +44,8 @@ NSString * const DSRStations = @"Stations";
 {
   NSView *aEmpView = [drEmpViewController view];
   [aEmpView removeFromSuperview];
+  [aEmpView setFrameSize:size];
+  [aEmpView setNeedsDisplay:YES];
   
   NSSize currentSize = [drMainView frame].size; 
   float deltaWidth = size.width - currentSize.width;

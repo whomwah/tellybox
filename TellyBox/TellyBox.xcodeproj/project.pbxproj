@@ -41,6 +41,7 @@
 		AEA828D00F16B0BE0036F466 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828CE0F16B0BE0036F466 /* Growl.framework */; };
 		AEA828D10F16B0BE0036F466 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828CF0F16B0BE0036F466 /* Sparkle.framework */; };
 		AEA828FB0F16B0D00036F466 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828FA0F16B0D00036F466 /* WebKit.framework */; };
+		AEF5A70D0F18CAC2000A57AC /* television.icns in Resources */ = {isa = PBXBuildFile; fileRef = AEF5A70C0F18CAC2000A57AC /* television.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,6 +104,7 @@
 		AEA828CE0F16B0BE0036F466 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		AEA828CF0F16B0BE0036F466 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		AEA828FA0F16B0D00036F466 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		AEF5A70C0F18CAC2000A57AC /* television.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = television.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AEF5A70C0F18CAC2000A57AC /* television.icns */,
 				AE215D6D0F16B48A000E7B70 /* live.html */,
 				AE215D6E0F16B48A000E7B70 /* emp.html */,
 				AEA828BD0F16B0AE0036F466 /* MainWindow.xib */,
@@ -331,6 +334,7 @@
 				AEA828C20F16B0AE0036F466 /* Preferences.xib in Resources */,
 				AE215D6F0F16B48A000E7B70 /* live.html in Resources */,
 				AE215D700F16B48A000E7B70 /* emp.html in Resources */,
+				AEF5A70D0F18CAC2000A57AC /* television.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

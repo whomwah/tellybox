@@ -10,8 +10,8 @@
 						<sparkle:releaseNotesLink>
               http://github.com/whomwah/tellybox/raw/master/CHANGELOG
 						</sparkle:releaseNotesLink>
-            <pubDate>Fri, 1 Jan 2008 19:00:00 +0000</pubDate>
-            <enclosure url="http://github.com/whomwah/" sparkle:version="1.0" length="" type="application/octet-stream" sparkle:dsaSignature="" />
+            <pubDate>Sat, 10 Jan 2008 12:40:00 +0000</pubDate>
+            <enclosure url="http://github.com/whomwah/" sparkle:version="1.0" length="933311" type="application/octet-stream" sparkle:dsaSignature="MCwCFE1KRuDj+wSvrnzc/RrqpiOe88FFAhQ6QTEhyJiKjj4N3SSlnO/l34OjsA==" />
          </item>
    </channel>
 </rss>
