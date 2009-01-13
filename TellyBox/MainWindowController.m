@@ -199,6 +199,8 @@ NSString * const DSRStations = @"Stations";
   NSString *start;
   NSMutableString *label;
   NSMenu *scheduleMenu = [[[NSApp mainMenu] itemWithTitle:@"Schedule"] submenu];  
+  NSFont *font = [NSFont userFontOfSize:13.0];
+  NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];
   NSEnumerator *enumerator = [[currentSchedule broadcasts] objectEnumerator];
   [self clearMenu:scheduleMenu];
   int count = 0;
@@ -207,7 +209,7 @@ NSString * const DSRStations = @"Stations";
     
     start = [[broadcast bStart] descriptionWithCalendarFormat:@"%H:%M" timeZone:nil locale:nil];
     label = [NSMutableString stringWithFormat:@"%@ %@", start, [broadcast displayTitle]];
-    newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:label 
+    newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"" 
                                                                    action:NULL 
                                                             keyEquivalent:@""];    
     if ([broadcast availableText]) {
@@ -215,6 +217,10 @@ NSString * const DSRStations = @"Stations";
       [label appendFormat:@" (%@)", [broadcast availableText]];      
     }
     
+    NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:label
+                                                                     attributes:attrsDictionary];
+    
+    [newItem setAttributedTitle:attrString];
     [newItem setEnabled:YES];
     [newItem setTag:count];
     if ([broadcast isEqual:[currentSchedule currentBroadcast]] == YES) {
@@ -224,6 +230,7 @@ NSString * const DSRStations = @"Stations";
     [newItem setTarget:self];
     [scheduleMenu addItem:newItem];
     [newItem release];
+    [attrString release];
     count++;
   }
 }
