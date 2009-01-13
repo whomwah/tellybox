@@ -11,7 +11,7 @@
               http://github.com/whomwah/tellybox/raw/master/CHANGELOG
 						</sparkle:releaseNotesLink>
             <pubDate>Tue, 13 Jan 2008 13:25:00 +0000</pubDate>
-            <enclosure url="http://github.com/whomwah/tellybox/raw/1.1/releases/1.0/TellyBox.dmg" sparkle:version="1.1" length="681172" type="application/octet-stream" sparkle:dsaSignature="MC0CFDK+JxvLt42EPos1d9yhKJErE2nXAhUAlfo4yWc/oylAzGMt+/xyMOvIDRg=" />
+            <enclosure url="http://github.com/whomwah/tellybox/raw/master/releases/1.0/TellyBox.dmg" sparkle:version="1.1" length="681172" type="application/octet-stream" sparkle:dsaSignature="MC0CFDK+JxvLt42EPos1d9yhKJErE2nXAhUAlfo4yWc/oylAzGMt+/xyMOvIDRg=" />
          </item>
    </channel>
 </rss>
