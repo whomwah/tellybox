@@ -355,7 +355,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AEF26FC70F1CA223005826A8</string>
+										<string>AE92E60E0F1CA31B008E03BD</string>
 										<key>history</key>
 										<array>
 											<string>AEA828650F16AD120036F466</string>
@@ -379,7 +379,7 @@
 											<string>AEF26FAD0F1CA15D005826A8</string>
 											<string>AEF26FC00F1CA223005826A8</string>
 											<string>AEF26FC10F1CA223005826A8</string>
-											<string>AEF26FC20F1CA223005826A8</string>
+											<string>AEF26FC70F1CA223005826A8</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -405,14 +405,6 @@
 											<string>AEF5A7280F18CCB1000A57AC</string>
 											<string>AEF5A7380F18CCED000A57AC</string>
 											<string>AEF5A7390F18CCED000A57AC</string>
-											<string>AEF26F9D0F1CA105005826A8</string>
-											<string>AEF26F9E0F1CA105005826A8</string>
-											<string>AEF26F9F0F1CA105005826A8</string>
-											<string>AEF26FAF0F1CA15D005826A8</string>
-											<string>AEF26FB00F1CA15D005826A8</string>
-											<string>AEF26FB10F1CA15D005826A8</string>
-											<string>AEF26FC30F1CA223005826A8</string>
-											<string>AEF26FC40F1CA223005826A8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -535,11 +527,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>AEF26FA20F1CA105005826A8</string>
+				<string>AE92E6000F1CA29E008E03BD</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>AEF26FA30F1CA105005826A8</string>
+				<string>AE92E6010F1CA29E008E03BD</string>
 				<string>AEA8285B0F16AC610036F466</string>
-				<string>AEF26FA40F1CA105005826A8</string>
+				<string>AE92E6020F1CA29E008E03BD</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -684,14 +676,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>AEF26FA50F1CA105005826A8</string>
+				<string>AE92E6080F1CA31B008E03BD</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>AEF26FA60F1CA105005826A8</string>
-				<string>AEF26FA70F1CA105005826A8</string>
-				<string>AEF26FA80F1CA105005826A8</string>
-				<string>AEF26FA90F1CA105005826A8</string>
-				<string>AEA8285B0F16AC610036F466</string>
+				<string>AE92E6090F1CA31B008E03BD</string>
+				<string>AE92E60A0F1CA31B008E03BD</string>
+				<string>AE92E60B0F1CA31B008E03BD</string>
+				<string>AE92E60C0F1CA31B008E03BD</string>
+				<string>AE92E60D0F1CA31B008E03BD</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -706,7 +698,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>253534755.91828099</real>
+	<real>253535003.48241299</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -721,8 +713,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>AEF26FB40F1CA15D005826A8</string>
-		<string>AEF26FB50F1CA15D005826A8</string>
 		<string>/Users/duncan/_checkouts/git/tellybox/TellyBox/TellyBox.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

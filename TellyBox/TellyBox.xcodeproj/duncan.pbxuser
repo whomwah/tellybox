@@ -77,8 +77,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 253534374;
-			PBXWorkspaceStateSaveDate = 253534374;
+			PBXPerProjectTemplateStateSaveDate = 253534875;
+			PBXWorkspaceStateSaveDate = 253534875;
 		};
 		perUserProjectItems = {
 			AE1733820F17ADB9001DD279 /* PBXTextBookmark */ = AE1733820F17ADB9001DD279 /* PBXTextBookmark */;
@@ -106,6 +106,7 @@
 			AE215DA00F16B65D000E7B70 /* PBXTextBookmark */ = AE215DA00F16B65D000E7B70 /* PBXTextBookmark */;
 			AE215DAE0F16B6CC000E7B70 /* PBXTextBookmark */ = AE215DAE0F16B6CC000E7B70 /* PBXTextBookmark */;
 			AE29B6FD0F17CCB7006C1B49 /* PBXTextBookmark */ = AE29B6FD0F17CCB7006C1B49 /* PBXTextBookmark */;
+			AE92E60E0F1CA31B008E03BD /* PBXTextBookmark */ = AE92E60E0F1CA31B008E03BD /* PBXTextBookmark */;
 			AEA828650F16AD120036F466 /* PBXTextBookmark */ = AEA828650F16AD120036F466 /* PBXTextBookmark */;
 			AEA828670F16AD120036F466 /* PBXTextBookmark */ = AEA828670F16AD120036F466 /* PBXTextBookmark */;
 			AEDCF9890F176ED000B0585B /* PBXTextBookmark */ = AEDCF9890F176ED000B0585B /* PBXTextBookmark */;
@@ -114,18 +115,9 @@
 			AEF26E850F1B88A5005826A8 /* PBXTextBookmark */ = AEF26E850F1B88A5005826A8 /* PBXTextBookmark */;
 			AEF26F780F1C9B72005826A8 /* PBXTextBookmark */ = AEF26F780F1C9B72005826A8 /* PBXTextBookmark */;
 			AEF26F9A0F1CA105005826A8 /* PlistBookmark */ = AEF26F9A0F1CA105005826A8 /* PlistBookmark */;
-			AEF26F9D0F1CA105005826A8 /* PlistBookmark */ = AEF26F9D0F1CA105005826A8 /* PlistBookmark */;
-			AEF26F9E0F1CA105005826A8 /* PlistBookmark */ = AEF26F9E0F1CA105005826A8 /* PlistBookmark */;
-			AEF26F9F0F1CA105005826A8 /* PBXTextBookmark */ = AEF26F9F0F1CA105005826A8 /* PBXTextBookmark */;
 			AEF26FAD0F1CA15D005826A8 /* PBXTextBookmark */ = AEF26FAD0F1CA15D005826A8 /* PBXTextBookmark */;
-			AEF26FAF0F1CA15D005826A8 /* PlistBookmark */ = AEF26FAF0F1CA15D005826A8 /* PlistBookmark */;
-			AEF26FB00F1CA15D005826A8 /* PBXTextBookmark */ = AEF26FB00F1CA15D005826A8 /* PBXTextBookmark */;
-			AEF26FB10F1CA15D005826A8 /* PBXTextBookmark */ = AEF26FB10F1CA15D005826A8 /* PBXTextBookmark */;
 			AEF26FC00F1CA223005826A8 /* PlistBookmark */ = AEF26FC00F1CA223005826A8 /* PlistBookmark */;
 			AEF26FC10F1CA223005826A8 /* PBXTextBookmark */ = AEF26FC10F1CA223005826A8 /* PBXTextBookmark */;
-			AEF26FC20F1CA223005826A8 /* PBXTextBookmark */ = AEF26FC20F1CA223005826A8 /* PBXTextBookmark */;
-			AEF26FC30F1CA223005826A8 /* PlistBookmark */ = AEF26FC30F1CA223005826A8 /* PlistBookmark */;
-			AEF26FC40F1CA223005826A8 /* PBXTextBookmark */ = AEF26FC40F1CA223005826A8 /* PBXTextBookmark */;
 			AEF26FC70F1CA223005826A8 /* PBXTextBookmark */ = AEF26FC70F1CA223005826A8 /* PBXTextBookmark */;
 			AEF5A7170F18CB2E000A57AC /* PBXBookmark */ = AEF5A7170F18CB2E000A57AC /* PBXBookmark */;
 			AEF5A7190F18CB2E000A57AC /* PBXBookmark */ = AEF5A7190F18CB2E000A57AC /* PBXBookmark */;
@@ -196,7 +188,7 @@
 	};
 	AE215D2D0F16B201000E7B70 /* MainWindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 3738}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 3808}}";
 			sepNavSelRange = "{227, 0}";
 			sepNavVisRange = "{0, 1186}";
 		};
@@ -497,6 +489,16 @@
 		vrLen = 709;
 		vrLoc = 0;
 	};
+	AE92E60E0F1CA31B008E03BD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AE215D2D0F16B201000E7B70 /* MainWindowController.m */;
+		name = "MainWindowController.m: 11";
+		rLen = 0;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 1186;
+		vrLoc = 0;
+	};
 	AEA8284F0F16AC5D0036F466 /* TellyBox */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -637,73 +639,7 @@
 		rLen = 0;
 		rLoc = 2147483647;
 	};
-	AEF26F9D0F1CA105005826A8 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/duncan/_checkouts/git/tellybox/TellyBox/Info.plist;
-		rLen = 0;
-		rLoc = 2147483647;
-	};
-	AEF26F9E0F1CA105005826A8 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = AEA828BB0F16B0990036F466 /* Stations.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/duncan/_checkouts/git/tellybox/TellyBox/Stations.plist;
-		rLen = 0;
-		rLoc = 2147483647;
-	};
-	AEF26F9F0F1CA105005826A8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = AE215D2D0F16B201000E7B70 /* MainWindowController.m */;
-		name = "MainWindowController.m: 109";
-		rLen = 0;
-		rLoc = 3741;
-		rType = 0;
-		vrLen = 1473;
-		vrLoc = 6474;
-	};
 	AEF26FAD0F1CA15D005826A8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = AEA828940F16B0180036F466 /* AppController.m */;
-		name = "AppController.m: 45";
-		rLen = 0;
-		rLoc = 1600;
-		rType = 0;
-		vrLen = 1066;
-		vrLoc = 1601;
-	};
-	AEF26FAF0F1CA15D005826A8 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = AEA828BB0F16B0990036F466 /* Stations.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			Stations,
-			7,
-			empKey,
-		);
-		name = /Users/duncan/_checkouts/git/tellybox/TellyBox/Stations.plist;
-		rLen = 0;
-		rLoc = 2147483647;
-	};
-	AEF26FB00F1CA15D005826A8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = AE215D2D0F16B201000E7B70 /* MainWindowController.m */;
-		name = "MainWindowController.m: 109";
-		rLen = 0;
-		rLoc = 3741;
-		rType = 0;
-		vrLen = 1388;
-		vrLoc = 306;
-	};
-	AEF26FB10F1CA15D005826A8 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = AEA828940F16B0180036F466 /* AppController.m */;
 		name = "AppController.m: 45";
@@ -728,40 +664,6 @@
 		rLoc = 2147483647;
 	};
 	AEF26FC10F1CA223005826A8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = AE215D6D0F16B48A000E7B70 /* live.html */;
-		name = "live.html: 17";
-		rLen = 0;
-		rLoc = 719;
-		rType = 0;
-		vrLen = 719;
-		vrLoc = 0;
-	};
-	AEF26FC20F1CA223005826A8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = AE215D2D0F16B201000E7B70 /* MainWindowController.m */;
-		name = "MainWindowController.m: 109";
-		rLen = 0;
-		rLoc = 3741;
-		rType = 0;
-		vrLen = 1344;
-		vrLoc = 350;
-	};
-	AEF26FC30F1CA223005826A8 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = AEA828BB0F16B0990036F466 /* Stations.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			Stations,
-			0,
-			label,
-		);
-		name = /Users/duncan/_checkouts/git/tellybox/TellyBox/Stations.plist;
-		rLen = 0;
-		rLoc = 2147483647;
-	};
-	AEF26FC40F1CA223005826A8 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = AE215D6D0F16B48A000E7B70 /* live.html */;
 		name = "live.html: 17";
