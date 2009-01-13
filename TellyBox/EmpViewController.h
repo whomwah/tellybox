@@ -11,13 +11,13 @@
 
 @interface EmpViewController : NSViewController {
   IBOutlet WebView              *empView;
-  NSString                      *title;
+  NSString                      *displayTitle;
   NSString                      *serviceKey;
   NSString                      *playbackFormat;
   NSString                      *playbackKey;
 }
 
-@property (copy) NSString *title;
+@property (copy) NSString *displayTitle;
 @property (copy) NSString *serviceKey;
 @property (copy) NSString *playbackFormat;
 @property (copy) NSString *playbackKey;
