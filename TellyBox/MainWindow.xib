@@ -36,14 +36,15 @@
 				<string key="NSClassName">NSApplication</string>
 			</object>
 			<object class="NSWindowTemplate" id="1005">
-				<int key="NSWindowStyleMask">5</int>
+				<int key="NSWindowStyleMask">261</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{810, 421}, {330, 143}}</string>
+				<string key="NSWindowRect">{{50, 50}, {300, 300}}</string>
 				<int key="NSWTFlags">536870912</int>
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
-				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
+				<string key="NSWindowContentMaxSize">{946, 567}</string>
+				<string key="NSWindowContentMinSize">{256, 179}</string>
 				<object class="NSView" key="NSWindowView" id="1006">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
@@ -52,16 +53,18 @@
 						<object class="NSCustomView" id="438117435">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">274</int>
-							<string key="NSFrameSize">{330, 143}</string>
+							<string key="NSFrameSize">{300, 300}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<string key="NSClassName">NSView</string>
 						</object>
 					</object>
-					<string key="NSFrameSize">{330, 143}</string>
+					<string key="NSFrameSize">{300, 300}</string>
 					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
-				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
+				<string key="NSMinSize">{256, 201}</string>
+				<string key="NSMaxSize">{946, 589}</string>
+				<string key="NSFrameAutosaveName"/>
 			</object>
 			<object class="NSUserDefaultsController" id="178881245">
 				<bool key="NSSharedInstance">YES</bool>
@@ -85,14 +88,6 @@
 						<reference key="destination" ref="1005"/>
 					</object>
 					<int key="connectionID">6</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="1005"/>
-						<reference key="destination" ref="1001"/>
-					</object>
-					<int key="connectionID">7</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -187,6 +182,10 @@
 					<string>1.NSWindowTemplate.visibleAtLaunch</string>
 					<string>1.WindowOrigin</string>
 					<string>1.editorWindowContentRectSynchronizationRect</string>
+					<string>1.windowTemplate.hasMaxSize</string>
+					<string>1.windowTemplate.hasMinSize</string>
+					<string>1.windowTemplate.maxSize</string>
+					<string>1.windowTemplate.minSize</string>
 					<string>2.IBPluginDependency</string>
 					<string>3.IBPluginDependency</string>
 				</object>
@@ -195,12 +194,16 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{393, 525}, {330, 143}}</string>
+					<string>{{414, 191}, {300, 300}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{393, 525}, {330, 143}}</string>
+					<string>{{414, 191}, {300, 300}}</string>
 					<reference ref="9"/>
 					<string>{196, 240}</string>
 					<string>{{202, 428}, {480, 270}}</string>
+					<boolean value="YES" id="5"/>
+					<reference ref="5"/>
+					<string>{946, 567}</string>
+					<string>{256, 179}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
@@ -225,7 +228,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">100</int>
+			<int key="maxID">105</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

@@ -18,9 +18,25 @@
   [self makeRequest];
 }
 
+- (void)resizeEmpTo:(NSSize)size
+{ 
+  NSWindow *w = [[self view] window];
+  NSSize currentSize = [w frame].size; 
+  float deltaWidth = size.width - currentSize.width;
+  float deltaHeight = (size.height + 22.0) - currentSize.height;
+  
+  NSRect wf = [w frame];
+  wf.size.width += deltaWidth;
+  wf.size.height += deltaHeight;
+  wf.origin.x -= deltaWidth/2;
+  wf.origin.y -= deltaHeight/2;
+  
+  [w setFrame:wf display:YES animate:YES];
+}
+
 - (void)makeRequest
 {
-	[[empView mainFrame] loadHTMLString:[self buildEmpHtml] baseURL:nil];
+	[[empView mainFrame] loadHTMLString:[self buildEmpHtml] baseURL:[NSURL URLWithString:@"http://www.bbc.co.uk/"]];
 }
 
 - (NSString *)buildEmpHtml
@@ -29,8 +45,8 @@
   NSString *html = [NSString stringWithContentsOfFile:[thisBundle pathForResource:[self playbackFormat] ofType:@"html"]
                                              encoding:NSUTF8StringEncoding
                                                 error:nil];
-  NSString *markup = [NSString stringWithFormat:html, 
-                      [self playbackKey], [self playbackKey], [self playbackKey]];
+  NSString *markup = [NSString stringWithFormat:html, [self playbackKey], 
+                      [self playbackKey], [self playbackKey]];
   return markup;
 }
 

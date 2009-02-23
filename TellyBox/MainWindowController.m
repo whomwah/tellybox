@@ -11,25 +11,40 @@
 #import "Broadcast.h"
 #import "Schedule.h"
 
-NSString * const DSRDefaultStation = @"DefaultStation";
-NSString * const DSRStations = @"Stations";
-#define EMP_WIDTH 512.0
-#define EMP_HEIGHT 323.0
-
 @implementation MainWindowController
 
 @synthesize currentStation, currentSchedule;
-@synthesize stations;
 @synthesize dockView;
 @synthesize drEmpViewController;
 
+- (void)awakeFromNib
+{
+  NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+  viewSizes = [ud arrayForKey:@"EmpSizes"];
+  stations = [ud arrayForKey:@"Stations"];
+  
+  NSDictionary *s = [viewSizes objectAtIndex:[ud integerForKey:@"DefaultEmpSize"]];
+  
+  [[self window] setFrame:NSMakeRect([ud integerForKey:@"DefaultEmpOriginX"],
+                                     [ud integerForKey:@"DefaultEmpOriginY"],
+                                     [[s valueForKey:@"width"] intValue],
+                                     [[s valueForKey:@"height"] intValue] + 22.0
+                                     ) display:NO];
+}
+
 - (void)windowDidLoad
 {
- 	dockTile = [NSApp dockTile];
+  dockTile = [NSApp dockTile];
+  
   self.drEmpViewController = [[EmpViewController alloc] initWithNibName:@"EmpView" bundle:nil];
-  [self setStations:[[NSUserDefaults standardUserDefaults] arrayForKey:DSRStations]];
-  [self setCurrentStation:[stations objectAtIndex:[[NSUserDefaults standardUserDefaults] integerForKey:DSRDefaultStation]]];
-  [self resizeEmpTo:NSMakeSize(EMP_WIDTH, EMP_HEIGHT)];
+  
+  [drMainView addSubview:[drEmpViewController view]];
+  [[drEmpViewController view] setFrameSize:[drMainView frame].size];
+  [self setNextResponder:drEmpViewController];
+  
+  [self setCurrentStation:[stations objectAtIndex:[[NSUserDefaults standardUserDefaults] 
+                                                   integerForKey:@"DefaultStation"]]];
+  [self buildViewSizesMenu];
   [self buildStationsMenu];
   [self setAndLoadStation:currentStation];
 }
@@ -41,35 +56,12 @@ NSString * const DSRStations = @"Stations";
 	[super dealloc];
 }
 
-- (void)resizeEmpTo:(NSSize)size
-{
-  NSView *aEmpView = [drEmpViewController view];
-  [aEmpView removeFromSuperview];
-  [aEmpView setFrameSize:size];
-  [aEmpView setNeedsDisplay:YES];
-  
-  NSSize currentSize = [drMainView frame].size; 
-  float deltaWidth = size.width - currentSize.width;
-  float deltaHeight = size.height - currentSize.height;
-  
-  NSWindow *w = [drMainView window];
-  NSRect windowFrame = [w frame];
-  windowFrame.size.width += deltaWidth;
-  windowFrame.size.height += deltaHeight;
-  windowFrame.origin.x -= deltaWidth/2;
-  windowFrame.origin.y -= deltaHeight/2;
-  
-  [w setFrame:windowFrame display:YES animate:YES];
-	[drMainView addSubview:aEmpView];
-}
-
 - (void)setAndLoadStation:(NSDictionary *)station
 {  
   Schedule *cSchedule;
   
   NSLog(@"setAndLoadStation:%@", station);
   [self setCurrentStation:station];
-  [self resizeEmpTo:NSMakeSize(EMP_WIDTH, EMP_HEIGHT)];
   [drEmpViewController setDisplayTitle:@"BBC"];
   [drEmpViewController setServiceKey:[station valueForKey:@"key"]];
   [drEmpViewController setPlaybackFormat:@"live"];
@@ -154,16 +146,15 @@ NSString * const DSRStations = @"Stations";
   }
 }
 
-#pragma mark Build Listen menu
+#pragma mark Build Stations Menu
 
 - (void)buildStationsMenu
 {
   NSMenuItem *newItem;
   NSMenu *listenMenu = [[[NSApp mainMenu] itemWithTitle:@"Watch"] submenu];
-  NSEnumerator *enumerator = [stations objectEnumerator];
   int count = 0;
   
-  for (NSDictionary *station in enumerator) {      
+  for (NSDictionary *station in stations) {      
     newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:[station valueForKey:@"label"] 
                                                                    action:@selector(changeStation:) 
                                                             keyEquivalent:@""];
@@ -185,13 +176,34 @@ NSString * const DSRStations = @"Stations";
   }
 }
 
-- (void)clearMenu:(NSMenu *)menu
+#pragma mark Build viewSizes Menu
+
+- (void)buildViewSizesMenu
 {
-  NSEnumerator *enumerator = [[menu itemArray] objectEnumerator];
-  for (NSMenuItem *item in enumerator) {  
-    [menu removeItem:item];
+  NSMenuItem *newItem;
+  NSMenu *menu = [[[NSApp mainMenu] itemWithTitle:@"View"] submenu];
+  [self clearMenu:menu];
+  int count = 0;
+  
+  for (NSDictionary *v in viewSizes) {      
+    newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] 
+               initWithTitle:[v valueForKey:@"label"] 
+               action:@selector(changeEmpSize:) 
+               keyEquivalent:[NSString stringWithFormat:@"%i", count + 1]];
+    
+    if ([[[NSUserDefaults standardUserDefaults] valueForKey:@"DefaultEmpSize"] intValue] == count)
+      [newItem setState:NSOnState];
+    [newItem setEnabled:YES];
+    [newItem setTag:count];
+    [newItem setTarget:self];
+    [menu addItem:newItem];
+    
+    [newItem release];
+    count++;
   }
 }
+
+#pragma mark Build Schedule Menu
 
 - (void)buildScheduleMenu
 {
@@ -201,11 +213,10 @@ NSString * const DSRStations = @"Stations";
   NSMenu *scheduleMenu = [[[NSApp mainMenu] itemWithTitle:@"Schedule"] submenu];  
   NSFont *font = [NSFont userFontOfSize:13.0];
   NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];
-  NSEnumerator *enumerator = [[currentSchedule broadcasts] objectEnumerator];
   [self clearMenu:scheduleMenu];
   int count = 0;
   
-  for (Broadcast *broadcast in enumerator) {
+  for (Broadcast *broadcast in [currentSchedule broadcasts]) {
     
     start = [[broadcast bStart] descriptionWithCalendarFormat:@"%H:%M" timeZone:nil locale:nil];
     label = [NSMutableString stringWithFormat:@"%@ %@", start, [broadcast displayTitle]];
@@ -235,11 +246,16 @@ NSString * const DSRStations = @"Stations";
   }
 }
 
+- (void)clearMenu:(NSMenu *)menu
+{
+  for (NSMenuItem *item in [menu itemArray]) {  
+    [menu removeItem:item];
+  }
+}
+
 - (void)fetchAOD:(id)sender
 {
   Broadcast *broadcast = [[currentSchedule broadcasts] objectAtIndex:[sender tag]];
-  [self resizeEmpTo:NSMakeSize(EMP_WIDTH, EMP_HEIGHT)];
-  [dockTile setBadgeLabel:@"replay"];
   [dockTile display];
   [drEmpViewController setDisplayTitle:[broadcast displayTitle]];
   [drEmpViewController setServiceKey:[[currentSchedule service] key]];
@@ -260,5 +276,21 @@ NSString * const DSRStations = @"Stations";
 {
   [[drEmpViewController view] setNeedsDisplay:YES];  
 }
+
+- (IBAction)refreshStation:(id)sender
+{
+  [self setAndLoadStation:[self currentStation]];
+}
+
+- (IBAction)changeEmpSize:(id)sender
+{
+  [[NSUserDefaults standardUserDefaults] setInteger:[sender tag] forKey:@"DefaultEmpSize"];
+  [self buildViewSizesMenu];
+  int w = [[[viewSizes objectAtIndex:[sender tag]] valueForKey:@"width"] intValue];
+  int h = [[[viewSizes objectAtIndex:[sender tag]] valueForKey:@"height"] intValue];
+  [drEmpViewController resizeEmpTo:NSMakeSize(w,h)];
+}
+
+
 
 @end

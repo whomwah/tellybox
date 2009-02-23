@@ -144,10 +144,9 @@
   if (error != nil)
     NSLog(@"An Error occured: %@", error);
   
-  NSEnumerator *enumerator = [data objectEnumerator];
   NSMutableArray *temp = [NSMutableArray array];
   
-  for (NSXMLNode *broadcast in enumerator) {    
+  for (NSXMLNode *broadcast in data) {    
     Broadcast *b = [[Broadcast alloc] initUsingBroadcastXML:broadcast];
     [temp addObject:b];
     [b release];
@@ -159,11 +158,10 @@
 
 - (void)setCurrentBroadcastData
 {
-  NSEnumerator *enumerator = [broadcasts objectEnumerator];
   NSDate *now = [NSDate date];
   [self setCurrentBroadcast:nil];
   
-  for (Broadcast *broadcast in enumerator) {
+  for (Broadcast *broadcast in broadcasts) {
     if (([now compare:[broadcast bStart]] == NSOrderedDescending) && 
         ([now compare:[broadcast bEnd]] == NSOrderedAscending)) {
       [self setCurrentBroadcast:broadcast];

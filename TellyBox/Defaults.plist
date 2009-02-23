@@ -2,6 +2,55 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>EmpSizes</key>
+	<array>
+		<dict>
+			<key>label</key>
+			<string>Mini</string>
+			<key>width</key>
+			<integer>256</integer>
+			<key>height</key>
+			<integer>179</integer>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>Smaller</string>
+			<key>width</key>
+			<integer>448</integer>
+			<key>height</key>
+			<integer>287</integer>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>Normal</string>
+			<key>width</key>
+			<integer>512</integer>
+			<key>height</key>
+			<integer>323</integer>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>Bigger</string>
+			<key>width</key>
+			<integer>640</integer>
+			<key>height</key>
+			<integer>395</integer>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>Massive</string>
+			<key>width</key>
+			<integer>946</integer>
+			<key>height</key>
+			<integer>567</integer>
+		</dict>
+	</array>
+	<key>DefaultEmpOriginX</key>
+	<integer>200</integer>
+	<key>DefaultEmpOriginY</key>
+	<integer>200</integer>
+	<key>DefaultEmpSize</key>
+	<integer>2</integer>
 	<key>DefaultStation</key>
 	<integer>0</integer>
 	<key>Stations</key>

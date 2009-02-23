@@ -18,7 +18,7 @@
   NSMutableDictionary *defaultValues = [NSMutableDictionary dictionary];
   NSString *errorDesc = nil;
   NSPropertyListFormat format;
-  NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Stations" ofType:@"plist"];
+  NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"];
   NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
   NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization
                                          propertyListFromData:plistXML
@@ -30,8 +30,12 @@
     [errorDesc release];
   }
   
-  [defaultValues setObject:[temp objectForKey:@"Stations"] forKey:DSRStations];
-  [defaultValues setObject:[temp objectForKey:@"DefaultStation"] forKey:DSRDefaultStation];
+  [defaultValues setObject:[temp objectForKey:@"Stations"] forKey:@"Stations"];
+  [defaultValues setObject:[temp objectForKey:@"EmpSizes"] forKey:@"EmpSizes"];
+  [defaultValues setObject:[temp objectForKey:@"DefaultStation"] forKey:@"DefaultStation"];
+  [defaultValues setObject:[temp objectForKey:@"DefaultEmpSize"] forKey:@"DefaultEmpSize"];
+  [defaultValues setObject:[temp objectForKey:@"DefaultEmpOriginX"] forKey:@"DefaultEmpOriginX"];
+  [defaultValues setObject:[temp objectForKey:@"DefaultEmpOriginY"] forKey:@"DefaultEmpOriginY"];
   [defaults registerDefaults:defaultValues];
 }
 
@@ -49,22 +53,27 @@
 	[super dealloc];
 }
 
-- (void)applicationDidUnhide:(NSNotification *)aNotification
-{
-  [drMainWindowController redrawEmp];
-}
-
-- (IBAction)refreshStation:(id)sender
-{
-  [drMainWindowController setAndLoadStation:[drMainWindowController currentStation]];
-}
-
 - (void)displayPreferenceWindow:(id)sender
 {
 	if (!preferencesWindowController) {
     preferencesWindowController = [[PreferencesWindowController alloc] init];
 	}
 	[preferencesWindowController showWindow:self];
+}
+
+- (void)applicationDidUnhide:(NSNotification *)aNotification
+{
+  [drMainWindowController redrawEmp];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)aNotification
+{
+  NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+  NSRect wf = [[drMainWindowController window] frame];
+  
+  [ud setInteger:wf.origin.x forKey:@"DefaultEmpOriginX"];
+  [ud setInteger:wf.origin.y forKey:@"DefaultEmpOriginY"];
+  [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)visitIplayerSite:(id)sender

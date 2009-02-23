@@ -1,3 +1,12 @@
+*1.3.0* (Feb 23rd, 2009)
+
+* You can now resize the viewing window
+  via the View menu or via shortcuts. There 
+  are a bunch of standard sizes from 
+  small to massive. As well as the full
+  screen option in the player itself
+* bug fixes and optimisations
+
 *1.2.0* (Jan 13th, 2009)
 
 * updated dock icon when service is chosen

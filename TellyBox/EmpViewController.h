@@ -10,18 +10,19 @@
 #import <WebKit/WebKit.h>
 
 @interface EmpViewController : NSViewController {
-  IBOutlet WebView              *empView;
-  NSString                      *displayTitle;
-  NSString                      *serviceKey;
-  NSString                      *playbackFormat;
-  NSString                      *playbackKey;
+  IBOutlet WebView *empView;
+  NSString *displayTitle;
+  NSString *serviceKey;
+  NSString *playbackFormat;
+  NSString *playbackKey;
 }
 
-@property (copy) NSString *displayTitle;
-@property (copy) NSString *serviceKey;
-@property (copy) NSString *playbackFormat;
-@property (copy) NSString *playbackKey;
+@property (nonatomic,copy) NSString *displayTitle;
+@property (nonatomic,copy) NSString *serviceKey;
+@property (nonatomic,copy) NSString *playbackFormat;
+@property (nonatomic,copy) NSString *playbackKey;
 
+- (void)resizeEmpTo:(NSSize)size;
 - (void)fetchEmp:(NSString *)keyString;
 - (void)makeRequest;
 - (NSString *)buildEmpHtml;

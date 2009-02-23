@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="99"/>
+			<integer value="2" id="10"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -269,7 +269,7 @@
 														<object class="NSMutableArray" key="dict.values">
 															<bool key="EncodedWithXMLCoder">YES</bool>
 															<string>%m/%d/%y</string>
-															<integer value="2"/>
+															<reference ref="10"/>
 															<integer value="1040"/>
 															<integer value="3"/>
 														</object>
@@ -334,7 +334,7 @@
 											<object class="NSTextFieldCell" key="NSCell" id="678883437">
 												<int key="NSCellFlags">68288064</int>
 												<int key="NSCellFlags2">71304192</int>
-												<string key="NSContents">Default Station:</string>
+												<string key="NSContents">Select your default channel:</string>
 												<reference key="NSSupport" ref="1018782244"/>
 												<reference key="NSControlView" ref="117581072"/>
 												<reference key="NSBackgroundColor" ref="971409735"/>
@@ -384,7 +384,7 @@
 							<object class="NSTextFieldCell" key="NSTitleCell">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">0</int>
-								<string key="NSContents">Defaults</string>
+								<string key="NSContents">Defaults Channel</string>
 								<reference key="NSSupport" ref="26"/>
 								<reference key="NSBackgroundColor" ref="309575426"/>
 								<object class="NSColor" key="NSTextColor">
@@ -406,14 +406,6 @@
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
 			</object>
 			<object class="NSUserDefaultsController" id="1070644568">
-				<object class="NSMutableArray" key="NSDeclaredKeys">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>DefaultStation</string>
-					<string>Stations</string>
-					<string>Stations.label</string>
-					<string>Stations.id</string>
-					<string>DefaultStation.id</string>
-				</object>
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
 			<object class="NSCustomObject" id="1041981873">
@@ -897,7 +889,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">210</int>
+			<int key="maxID">218</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -943,7 +935,7 @@
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.LastKnownRelativeProjectPath">Radio.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">TellyBox.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 	</data>
 </archive>
