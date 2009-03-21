@@ -1,6 +1,5 @@
 //
 //  Broadcast.h
-//  Telly
 //
 //  Created by Duncan Robertson on 06/01/2009.
 //  Copyright 2009 Whomwah. All rights reserved.
@@ -23,18 +22,19 @@
   NSString *availableText;
 }
 
-@property(nonatomic,copy) NSString *title;
-@property(nonatomic,copy) NSString *subtitle;
-@property(nonatomic,copy) NSString *displayTitle;
-@property(nonatomic,copy) NSString *displaySubtitle;
-@property(nonatomic,copy) NSString *shortSynopsis;
-@property(nonatomic,copy) NSString *pid;
-@property(nonatomic,copy) NSString *duration;
-@property(nonatomic,retain) NSDate *bStart;
-@property(nonatomic,retain) NSDate *bEnd;
-@property(nonatomic,retain) NSDate *available;
-@property(nonatomic,copy) NSString *availableText;
+@property(nonatomic, copy) NSString *title;
+@property(nonatomic, copy) NSString *subtitle;
+@property(nonatomic, copy) NSString *displayTitle;
+@property(nonatomic, copy) NSString *displaySubtitle;
+@property(nonatomic, copy) NSString *shortSynopsis;
+@property(nonatomic, copy) NSString *pid;
+@property(nonatomic, copy) NSString *duration;
+@property(nonatomic, retain) NSDate *bStart;
+@property(nonatomic, retain) NSDate *bEnd;
+@property(nonatomic, retain) NSDate *available;
+@property(nonatomic, copy) NSString *availableText;
 
+- (NSString *)programmesUrl;
 - (id)initUsingBroadcastXML:(NSXMLNode *)node;
 - (NSDate *)fetchDateForXPath:(NSString *)string withNode:(NSXMLNode *)node;
 

@@ -1,6 +1,5 @@
 //
 //  Schedule.h
-//  Telly
 //
 //  Created by Duncan Robertson on 18/12/2008.
 //  Copyright 2008 Whomwah. All rights reserved.
@@ -20,28 +19,27 @@
   NSDate *lastUpdated;
   NSString *serviceKey;
   NSString *outletKey;
-  NSString *displayTitle;
-  NSString *displaySynopsis;
   NSArray *broadcasts;
   
   Broadcast *currentBroadcast;
   Service *service;
 }
 
-@property (nonatomic,copy) NSString *displayTitle;
-@property (nonatomic,copy) NSString *displaySynopsis;
-@property (nonatomic,retain) NSDate *lastUpdated;
-@property (nonatomic,retain) NSArray *broadcasts;
-@property (nonatomic,retain) Broadcast *currentBroadcast;
-@property (nonatomic,retain) Service *service;
+@property (nonatomic, retain) NSDate *lastUpdated;
+@property (nonatomic, retain) NSArray *broadcasts;
+@property (nonatomic, retain) Service *service;
 
 - (id)initUsingService:(NSString *)sv outlet:(NSString *)ol;
-- (NSURL *)buildUrl;
+- (Schedule *)fetchScheduleForDate:(NSDate *)date;
+- (NSURL *)buildUrlForDate:(NSDate *)date;
 - (void)fetch:(NSURL *)url;
-
+- (NSString *)broadcastDisplayTitleForIndex:(int)index;
+- (NSString *)currentBroadcastDisplayTitle;
 - (void)setServiceData;
 - (void)setBroadcastData;
-- (void)setCurrentBroadcastData;
+- (Broadcast *)currBroadcast;
+- (Broadcast *)nextBroadcast;
+- (Broadcast *)prevBroadcast;
 
 // delagates
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response;

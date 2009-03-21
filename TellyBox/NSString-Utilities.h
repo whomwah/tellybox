@@ -1,6 +1,6 @@
 //
 //  NSString-Utilities.h
-//  MiProgrammes
+//  TellyBox
 //
 //  Created by Duncan Robertson on 10/06/2008.
 //  Copyright 2008 Whomwah. All rights reserved.

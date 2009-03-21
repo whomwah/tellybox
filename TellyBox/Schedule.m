@@ -1,6 +1,5 @@
 //
 //  Schedule.m
-//  Telly
 //
 //  Created by Duncan Robertson on 18/12/2008.
 //  Copyright 2008 Whomwah. All rights reserved.
@@ -11,16 +10,13 @@
 #import "Schedule.h"
 #import "NSString-Utilities.h"
 
-#define API_URL @"http://www.bbc.co.uk/%@programmes/schedules%@.xml";
+#define API_URL @"http://www.bbc.co.uk/%@programmes/schedules%@%@.xml";
 
 @implementation Schedule
 
-@synthesize lastUpdated;
-@synthesize service;
-@synthesize displayTitle, displaySynopsis;
-@synthesize broadcasts, currentBroadcast;
+@synthesize lastUpdated, service, broadcasts;
 
--(id)init
+- (id)init
 {
   [self dealloc];
   @throw [NSException exceptionWithName:@"DSRBadInitCall" 
@@ -36,15 +32,20 @@
   
   outletKey = ol;
   serviceKey = sv;
-  [self fetch:[self buildUrl]];
   
   return self;
 }
 
-- (NSURL *)buildUrl
+- (Schedule *)fetchScheduleForDate:(NSDate *)date
+{
+  [self fetch:[self buildUrlForDate:date]];
+  return self;
+}
+
+- (NSURL *)buildUrlForDate:(NSDate *)date
 {
   NSString *api = API_URL;
-  NSString *serviceStr = @"", *outletStr = @"", *urlStr;
+  NSString *serviceStr = @"", *outletStr = @"", *dateStr = @"", *urlStr;
 
   if (outletKey)
     outletStr = [NSString stringWithFormat:@"/%@", outletKey];
@@ -52,8 +53,11 @@
   if (serviceKey)
     serviceStr = [NSString stringWithFormat:@"%@/", serviceKey];
   
-  urlStr = [NSString stringWithFormat:api, serviceStr, outletStr];
-  NSLog(@"URL: %@", urlStr);
+  if (date)
+    dateStr = [date descriptionWithCalendarFormat:@"/%Y/%m/%d" timeZone:nil locale:nil];
+  
+  urlStr = [NSString stringWithFormat:api, serviceStr, outletStr, dateStr];
+  NSLog(@"schedule: %@", urlStr);
   return [NSURL URLWithString:urlStr];
 }
 
@@ -76,7 +80,6 @@
 {
   [receivedData setLength:0];
   expectedLength = [response expectedContentLength];
-  [self setDisplayTitle:@"Loading Schedule..."];
   NSLog(@"Yay, we got a response");
 }
 
@@ -84,8 +87,6 @@
 {
   [receivedData appendData:data];
   float percentComplete = ([receivedData length]/expectedLength)*100.0;
-  
-  [self setDisplayTitle:[NSString stringWithFormat:@"Loading Schedule %1.0f%%", percentComplete]];
   NSLog(@"data is being fetched: %1.0f%%", percentComplete);
 }
 
@@ -113,7 +114,6 @@
   xmlDocument = doc;
   [self setServiceData];
   [self setBroadcastData];
-  [self setDisplayTitle:[service displayTitle]];
   [self setLastUpdated:[NSDate date]];
   
   [doc release];
@@ -140,7 +140,6 @@
 {
   NSError *error;
   NSArray *data = [xmlDocument nodesForXPath:@".//schedule/*/broadcasts/broadcast" error:&error];
-  
   if (error != nil)
     NSLog(@"An Error occured: %@", error);
   
@@ -153,21 +152,59 @@
   }
   
   [self setBroadcasts:temp];
-  [self setCurrentBroadcastData];
 }
 
-- (void)setCurrentBroadcastData
+- (Broadcast *)currBroadcast
 {
   NSDate *now = [NSDate date];
-  [self setCurrentBroadcast:nil];
   
   for (Broadcast *broadcast in broadcasts) {
     if (([now compare:[broadcast bStart]] == NSOrderedDescending) && 
         ([now compare:[broadcast bEnd]] == NSOrderedAscending)) {
-      [self setCurrentBroadcast:broadcast];
-      NSLog(@"currentBroadcast: %@", currentBroadcast);
-      break;
+      return broadcast;
     }
+  }
+  return nil;
+}
+
+- (Broadcast *)nextBroadcast
+{
+  int index = [broadcasts indexOfObject:[self currBroadcast]];
+  
+  if (index != NSNotFound && index+1 <= [broadcasts count]) {
+    index++;
+  }
+  
+  return [broadcasts objectAtIndex:index];
+}
+
+- (Broadcast *)prevBroadcast
+{
+  int index = [broadcasts indexOfObject:[self currBroadcast]];
+  
+  if (index != NSNotFound && index-1 >= 0) {
+    index++;
+  }
+  
+  return [broadcasts objectAtIndex:index];
+}
+
+- (NSString *)broadcastDisplayTitleForIndex:(int)index
+{
+  Broadcast *bc = [[self broadcasts] objectAtIndex:index];
+  if (!bc)
+    return service.desc;
+
+  return [NSString stringWithFormat:@"%@ - %@", [service displayTitle], [bc displayTitle]];
+}
+
+- (NSString *)currentBroadcastDisplayTitle
+{
+  if ([self currBroadcast]) {
+    int index = [broadcasts indexOfObject:[self currBroadcast]];
+    return [self broadcastDisplayTitleForIndex:index];
+  } else {
+    return [service displayTitle]; 
   }
 }
 

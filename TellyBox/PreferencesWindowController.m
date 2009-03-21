@@ -1,6 +1,6 @@
 //
 //  PreferencesWindowController.m
-//  RadioAunty
+//  TellyBox
 //
 //  Created by Duncan Robertson on 11/12/2008.
 //  Copyright 2008 Whomwah. All rights reserved.
@@ -20,7 +20,13 @@
 
 - (void)windowDidLoad
 {
-	NSLog(@"Nib file loaded");
+	NSLog(@"Preferences Nib file loaded");
+}
+
+- (void)windowWillClose:(NSNotification *)notification
+{
+	NSLog(@"Preferences saved..");
+  [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

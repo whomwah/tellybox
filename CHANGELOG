@@ -1,3 +1,32 @@
+*1.4.0* (Mar 22st, 2009)
+
+* New icon. Thanks to David Wilson
+  Not only new, but animated too. I spent
+  far too long making this cool, but I 
+  think it was worth it
+* Twitter support. Via the preferences menu
+  You can now choose to post your listening 
+  habits to the @radioandtvbot account 
+  on twitter.com. You can optionally 
+  provide your twitter username and 
+  this will be in the tweet otherwise 
+  your Mac login fullname will
+  be used. There are growl notifications
+  for this. The App will only tweet if you
+  have been listening to the same show
+  for over 5 mins
+* The red close button now displayed. 
+  It will quit the App
+* The title in the window is now more
+  useful, displaying what show you are 
+  listening to. Especially useful when 
+  the app is zoomed.
+* The schedule stays up-to-date. This means
+  that when the shows change and become 
+  available to listen again, the app knows.
+  It also means that the title and tweeting
+  happens as you listen throughout the day.
+
 *1.3.0* (Feb 23rd, 2009)
 
 * You can now resize the viewing window

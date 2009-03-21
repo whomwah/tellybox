@@ -1,6 +1,6 @@
 //
 //  AppController.m
-//  Radio
+//  TellyBox
 //
 //  Created by Duncan Robertson on 15/12/2008.
 //  Copyright 2008 Whomwah. All rights reserved.
@@ -34,8 +34,9 @@
   [defaultValues setObject:[temp objectForKey:@"EmpSizes"] forKey:@"EmpSizes"];
   [defaultValues setObject:[temp objectForKey:@"DefaultStation"] forKey:@"DefaultStation"];
   [defaultValues setObject:[temp objectForKey:@"DefaultEmpSize"] forKey:@"DefaultEmpSize"];
-  [defaultValues setObject:[temp objectForKey:@"DefaultEmpOriginX"] forKey:@"DefaultEmpOriginX"];
-  [defaultValues setObject:[temp objectForKey:@"DefaultEmpOriginY"] forKey:@"DefaultEmpOriginY"];
+  [defaultValues setObject:[temp objectForKey:@"DefaultEmpOrigin"] forKey:@"DefaultEmpOrigin"];
+  [defaultValues setObject:[temp objectForKey:@"DefaultSendToTwitter"] forKey:@"DefaultSendToTwitter"];  
+  [defaultValues setObject:[temp objectForKey:@"DefaultTwitterUsername"] forKey:@"DefaultTwitterUsername"];
   [defaults registerDefaults:defaultValues];
 }
 
@@ -45,6 +46,7 @@
   drMainWindowController = [[MainWindowController alloc] initWithWindowNibName:@"MainWindow"];
 	[[drMainWindowController window] makeMainWindow];
 	[[drMainWindowController window] makeKeyAndOrderFront:self];
+  [[drMainWindowController window] setShowsResizeIndicator:NO];
 }
 
 - (void)dealloc
@@ -70,10 +72,14 @@
 {
   NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
   NSRect wf = [[drMainWindowController window] frame];
-  
-  [ud setInteger:wf.origin.x forKey:@"DefaultEmpOriginX"];
-  [ud setInteger:wf.origin.y forKey:@"DefaultEmpOriginY"];
+
+  [ud setValue:NSStringFromPoint(wf.origin) forKey:@"DefaultEmpOrigin"];
   [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)sender
+{
+	return YES;
 }
 
 - (IBAction)visitIplayerSite:(id)sender
@@ -91,6 +97,12 @@
 - (IBAction)visitHelpSite:(id)sender
 {
   NSURL *url = [NSURL URLWithString:@"http://iplayerhelp.external.bbc.co.uk/help/"];
+  [[NSWorkspace sharedWorkspace] openURL:url];
+}
+
+- (IBAction)visitWebSite:(id)sender
+{
+  NSURL *url = [NSURL URLWithString:@"http://whomwah.github.com/tellybox/"];
   [[NSWorkspace sharedWorkspace] openURL:url];
 }
 

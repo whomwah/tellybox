@@ -7,50 +7,42 @@
 		<dict>
 			<key>label</key>
 			<string>Mini</string>
-			<key>width</key>
-			<integer>256</integer>
-			<key>height</key>
-			<integer>179</integer>
+			<key>size</key>
+			<string>{256, 179}</string>
 		</dict>
 		<dict>
 			<key>label</key>
 			<string>Smaller</string>
-			<key>width</key>
-			<integer>448</integer>
-			<key>height</key>
-			<integer>287</integer>
+			<key>size</key>
+			<string>{448, 287}</string>
 		</dict>
 		<dict>
 			<key>label</key>
 			<string>Normal</string>
-			<key>width</key>
-			<integer>512</integer>
-			<key>height</key>
-			<integer>323</integer>
+			<key>size</key>
+			<string>{512, 323}</string>
 		</dict>
 		<dict>
 			<key>label</key>
 			<string>Bigger</string>
-			<key>width</key>
-			<integer>640</integer>
-			<key>height</key>
-			<integer>395</integer>
+			<key>size</key>
+			<string>{640, 395}</string>
 		</dict>
 		<dict>
 			<key>label</key>
 			<string>Massive</string>
-			<key>width</key>
-			<integer>946</integer>
-			<key>height</key>
-			<integer>567</integer>
+			<key>size</key>
+			<string>{946, 567}</string>
 		</dict>
 	</array>
-	<key>DefaultEmpOriginX</key>
-	<integer>200</integer>
-	<key>DefaultEmpOriginY</key>
-	<integer>200</integer>
+	<key>DefaultEmpOrigin</key>
+	<string>{200, 200}</string>
 	<key>DefaultEmpSize</key>
-	<integer>2</integer>
+	<integer>0</integer>
+	<key>DefaultSendToTwitter</key>
+	<false/>
+	<key>DefaultTwitterUsername</key>
+	<string></string>
 	<key>DefaultStation</key>
 	<integer>0</integer>
 	<key>Stations</key>

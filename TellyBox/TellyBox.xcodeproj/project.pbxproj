@@ -11,15 +11,29 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		AE17C0C10F73FFC400F8C4C8 /* tcard.png in Resources */ = {isa = PBXBuildFile; fileRef = AE17C0C00F73FFC400F8C4C8 /* tcard.png */; };
+		AE17C0E90F74069D00F8C4C8 /* tellybox.icns in Resources */ = {isa = PBXBuildFile; fileRef = AE17C0E80F74069D00F8C4C8 /* tellybox.icns */; };
 		AE215D250F16B1B4000E7B70 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEA828CE0F16B0BE0036F466 /* Growl.framework */; };
 		AE215D260F16B1B4000E7B70 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEA828CF0F16B0BE0036F466 /* Sparkle.framework */; };
 		AE215D2E0F16B201000E7B70 /* EmpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D2B0F16B201000E7B70 /* EmpViewController.m */; };
 		AE215D2F0F16B201000E7B70 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D2D0F16B201000E7B70 /* MainWindowController.m */; };
-		AE215D550F16B3F0000E7B70 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D500F16B3F0000E7B70 /* Schedule.m */; };
-		AE215D560F16B3F0000E7B70 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D520F16B3F0000E7B70 /* Service.m */; };
-		AE215D570F16B3F0000E7B70 /* Broadcast.m in Sources */ = {isa = PBXBuildFile; fileRef = AE215D540F16B3F0000E7B70 /* Broadcast.m */; };
 		AE215D6F0F16B48A000E7B70 /* live.html in Resources */ = {isa = PBXBuildFile; fileRef = AE215D6D0F16B48A000E7B70 /* live.html */; };
 		AE215D700F16B48A000E7B70 /* emp.html in Resources */ = {isa = PBXBuildFile; fileRef = AE215D6E0F16B48A000E7B70 /* emp.html */; };
+		AE2347C80F6D74A8003C6025 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347B10F6D74A8003C6025 /* NSString+UUID.m */; };
+		AE2347C90F6D74A8003C6025 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347B30F6D74A8003C6025 /* NSData+Base64.m */; };
+		AE2347CA0F6D74A8003C6025 /* MGTwitterXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347B60F6D74A8003C6025 /* MGTwitterXMLParser.m */; };
+		AE2347CB0F6D74A8003C6025 /* MGTwitterStatusesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347B80F6D74A8003C6025 /* MGTwitterStatusesParser.m */; };
+		AE2347CC0F6D74A8003C6025 /* MGTwitterUsersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347BA0F6D74A8003C6025 /* MGTwitterUsersParser.m */; };
+		AE2347CD0F6D74A8003C6025 /* MGTwitterMessagesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347BC0F6D74A8003C6025 /* MGTwitterMessagesParser.m */; };
+		AE2347CE0F6D74A8003C6025 /* MGTwitterMiscParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347BE0F6D74A8003C6025 /* MGTwitterMiscParser.m */; };
+		AE2347CF0F6D74A8003C6025 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347C10F6D74A8003C6025 /* MGTwitterEngine.m */; };
+		AE2347D00F6D74A8003C6025 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347C40F6D74A8003C6025 /* MGTwitterHTTPURLConnection.m */; };
+		AE2347D40F6D7533003C6025 /* DockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347D30F6D7533003C6025 /* DockView.m */; };
+		AE2347D60F6D7548003C6025 /* robot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE2347D50F6D7548003C6025 /* robot.jpg */; };
+		AE2347DD0F6D759F003C6025 /* Broadcast.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347D80F6D759F003C6025 /* Broadcast.m */; };
+		AE2347DE0F6D759F003C6025 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347DA0F6D759F003C6025 /* Schedule.m */; };
+		AE2347DF0F6D759F003C6025 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347DC0F6D759F003C6025 /* Service.m */; };
+		AE731D210F72929A00678169 /* tellybox-on.icns in Resources */ = {isa = PBXBuildFile; fileRef = AE731D200F72929A00678169 /* tellybox-on.icns */; };
 		AEA828870F16B0070036F466 /* NSString-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA828860F16B0070036F466 /* NSString-Utilities.m */; };
 		AEA8289F0F16B0180036F466 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA828940F16B0180036F466 /* AppController.m */; };
 		AEA828A20F16B0180036F466 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA8289A0F16B0180036F466 /* PreferencesWindowController.m */; };
@@ -31,7 +45,6 @@
 		AEA828B00F16B0530036F466 /* cbbc.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A80F16B0530036F466 /* cbbc.gif */; };
 		AEA828B10F16B0530036F466 /* cbeebies.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A90F16B0530036F466 /* cbeebies.gif */; };
 		AEA828B20F16B0530036F466 /* parliament.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828AA0F16B0530036F466 /* parliament.gif */; };
-		AEA828B70F16B0710036F466 /* radio.icns in Resources */ = {isa = PBXBuildFile; fileRef = AEA828B30F16B0710036F466 /* radio.icns */; };
 		AEA828B80F16B0710036F466 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = AEA828B40F16B0710036F466 /* dsa_pub.pem */; };
 		AEA828BA0F16B0710036F466 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = AEA828B60F16B0710036F466 /* Growl Registration Ticket.growlRegDict */; };
 		AEA828BC0F16B0990036F466 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA828BB0F16B0990036F466 /* Defaults.plist */; };
@@ -41,7 +54,7 @@
 		AEA828D00F16B0BE0036F466 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828CE0F16B0BE0036F466 /* Growl.framework */; };
 		AEA828D10F16B0BE0036F466 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828CF0F16B0BE0036F466 /* Sparkle.framework */; };
 		AEA828FB0F16B0D00036F466 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828FA0F16B0D00036F466 /* WebKit.framework */; };
-		AEF5A70D0F18CAC2000A57AC /* television.icns in Resources */ = {isa = PBXBuildFile; fileRef = AEF5A70C0F18CAC2000A57AC /* television.icns */; };
+		AEE32E1D0F702F5A0049E25F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AEE32E1C0F702F5A0049E25F /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,18 +81,47 @@
 		32CA4F630368D1EE00C91783 /* TellyBox_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TellyBox_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* TellyBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TellyBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE17C0C00F73FFC400F8C4C8 /* tcard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tcard.png; sourceTree = "<group>"; };
+		AE17C0E80F74069D00F8C4C8 /* tellybox.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = tellybox.icns; sourceTree = "<group>"; };
 		AE215D2A0F16B201000E7B70 /* EmpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmpViewController.h; sourceTree = "<group>"; };
 		AE215D2B0F16B201000E7B70 /* EmpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmpViewController.m; sourceTree = "<group>"; };
 		AE215D2C0F16B201000E7B70 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
 		AE215D2D0F16B201000E7B70 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
-		AE215D4F0F16B3F0000E7B70 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
-		AE215D500F16B3F0000E7B70 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
-		AE215D510F16B3F0000E7B70 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
-		AE215D520F16B3F0000E7B70 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
-		AE215D530F16B3F0000E7B70 /* Broadcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broadcast.h; sourceTree = "<group>"; };
-		AE215D540F16B3F0000E7B70 /* Broadcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broadcast.m; sourceTree = "<group>"; };
 		AE215D6D0F16B48A000E7B70 /* live.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = live.html; sourceTree = "<group>"; };
 		AE215D6E0F16B48A000E7B70 /* emp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = emp.html; sourceTree = "<group>"; };
+		AE2347B00F6D74A8003C6025 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		AE2347B10F6D74A8003C6025 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		AE2347B20F6D74A8003C6025 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		AE2347B30F6D74A8003C6025 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		AE2347B50F6D74A8003C6025 /* MGTwitterXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterXMLParser.h; sourceTree = "<group>"; };
+		AE2347B60F6D74A8003C6025 /* MGTwitterXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterXMLParser.m; sourceTree = "<group>"; };
+		AE2347B70F6D74A8003C6025 /* MGTwitterStatusesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterStatusesParser.h; sourceTree = "<group>"; };
+		AE2347B80F6D74A8003C6025 /* MGTwitterStatusesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterStatusesParser.m; sourceTree = "<group>"; };
+		AE2347B90F6D74A8003C6025 /* MGTwitterUsersParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterUsersParser.h; sourceTree = "<group>"; };
+		AE2347BA0F6D74A8003C6025 /* MGTwitterUsersParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterUsersParser.m; sourceTree = "<group>"; };
+		AE2347BB0F6D74A8003C6025 /* MGTwitterMessagesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterMessagesParser.h; sourceTree = "<group>"; };
+		AE2347BC0F6D74A8003C6025 /* MGTwitterMessagesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterMessagesParser.m; sourceTree = "<group>"; };
+		AE2347BD0F6D74A8003C6025 /* MGTwitterMiscParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterMiscParser.h; sourceTree = "<group>"; };
+		AE2347BE0F6D74A8003C6025 /* MGTwitterMiscParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterMiscParser.m; sourceTree = "<group>"; };
+		AE2347BF0F6D74A8003C6025 /* MGTwitterEngineGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngineGlobalHeader.h; sourceTree = "<group>"; };
+		AE2347C00F6D74A8003C6025 /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngine.h; sourceTree = "<group>"; };
+		AE2347C10F6D74A8003C6025 /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterEngine.m; sourceTree = "<group>"; };
+		AE2347C20F6D74A8003C6025 /* MGTwitterEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngineDelegate.h; sourceTree = "<group>"; };
+		AE2347C30F6D74A8003C6025 /* MGTwitterHTTPURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterHTTPURLConnection.h; sourceTree = "<group>"; };
+		AE2347C40F6D74A8003C6025 /* MGTwitterHTTPURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterHTTPURLConnection.m; sourceTree = "<group>"; };
+		AE2347C50F6D74A8003C6025 /* MGTwitterRequestTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterRequestTypes.h; sourceTree = "<group>"; };
+		AE2347C60F6D74A8003C6025 /* MGTwitterParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterParserDelegate.h; sourceTree = "<group>"; };
+		AE2347C70F6D74A8003C6025 /* PWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWord.h; sourceTree = "<group>"; };
+		AE2347D20F6D7533003C6025 /* DockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockView.h; sourceTree = "<group>"; };
+		AE2347D30F6D7533003C6025 /* DockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DockView.m; sourceTree = "<group>"; };
+		AE2347D50F6D7548003C6025 /* robot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robot.jpg; sourceTree = "<group>"; };
+		AE2347D70F6D759F003C6025 /* Broadcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broadcast.h; sourceTree = "<group>"; };
+		AE2347D80F6D759F003C6025 /* Broadcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broadcast.m; sourceTree = "<group>"; };
+		AE2347D90F6D759F003C6025 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		AE2347DA0F6D759F003C6025 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		AE2347DB0F6D759F003C6025 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		AE2347DC0F6D759F003C6025 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		AE731D200F72929A00678169 /* tellybox-on.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "tellybox-on.icns"; sourceTree = "<group>"; };
 		AEA828850F16B0070036F466 /* NSString-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-Utilities.h"; sourceTree = "<group>"; };
 		AEA828860F16B0070036F466 /* NSString-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-Utilities.m"; sourceTree = "<group>"; };
 		AEA828930F16B0180036F466 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -94,7 +136,6 @@
 		AEA828A80F16B0530036F466 /* cbbc.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cbbc.gif; sourceTree = "<group>"; };
 		AEA828A90F16B0530036F466 /* cbeebies.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cbeebies.gif; sourceTree = "<group>"; };
 		AEA828AA0F16B0530036F466 /* parliament.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = parliament.gif; sourceTree = "<group>"; };
-		AEA828B30F16B0710036F466 /* radio.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = radio.icns; sourceTree = "<group>"; };
 		AEA828B40F16B0710036F466 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		AEA828B60F16B0710036F466 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		AEA828BB0F16B0990036F466 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
@@ -104,7 +145,7 @@
 		AEA828CE0F16B0BE0036F466 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		AEA828CF0F16B0BE0036F466 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		AEA828FA0F16B0D00036F466 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
-		AEF5A70C0F18CAC2000A57AC /* television.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = television.icns; sourceTree = "<group>"; };
+		AEE32E1C0F702F5A0049E25F /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,10 +194,12 @@
 		29B97314FDCFA39411CA2CEA /* TellyBox */ = {
 			isa = PBXGroup;
 			children = (
-				AEA828920F16B0180036F466 /* Controllers */,
-				AEA828880F16B0180036F466 /* Models */,
-				AEA828840F16B0070036F466 /* Categories */,
+				AE2347AD0F6D74A8003C6025 /* Classes */,
 				AEA828640F16AD0F0036F466 /* Images */,
+				AEA828840F16B0070036F466 /* Categories */,
+				AEA828880F16B0180036F466 /* Models */,
+				AE2347D10F6D7533003C6025 /* Views */,
+				AEA828920F16B0180036F466 /* Controllers */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -177,7 +220,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AEF5A70C0F18CAC2000A57AC /* television.icns */,
+				AE17C0E80F74069D00F8C4C8 /* tellybox.icns */,
+				AE731D200F72929A00678169 /* tellybox-on.icns */,
+				AEE32E1C0F702F5A0049E25F /* Credits.rtf */,
 				AE215D6D0F16B48A000E7B70 /* live.html */,
 				AE215D6E0F16B48A000E7B70 /* emp.html */,
 				AEA828BD0F16B0AE0036F466 /* MainWindow.xib */,
@@ -185,7 +230,6 @@
 				AEA828BF0F16B0AE0036F466 /* Preferences.xib */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 				AEA828BB0F16B0990036F466 /* Defaults.plist */,
-				AEA828B30F16B0710036F466 /* radio.icns */,
 				AEA828B40F16B0710036F466 /* dsa_pub.pem */,
 				AEA828B60F16B0710036F466 /* Growl Registration Ticket.growlRegDict */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -203,9 +247,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE2347AD0F6D74A8003C6025 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AE2347C70F6D74A8003C6025 /* PWord.h */,
+				AE2347AE0F6D74A8003C6025 /* MATwitterEngine */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		AE2347AE0F6D74A8003C6025 /* MATwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				AE2347BF0F6D74A8003C6025 /* MGTwitterEngineGlobalHeader.h */,
+				AE2347C00F6D74A8003C6025 /* MGTwitterEngine.h */,
+				AE2347C10F6D74A8003C6025 /* MGTwitterEngine.m */,
+				AE2347C20F6D74A8003C6025 /* MGTwitterEngineDelegate.h */,
+				AE2347C30F6D74A8003C6025 /* MGTwitterHTTPURLConnection.h */,
+				AE2347C40F6D74A8003C6025 /* MGTwitterHTTPURLConnection.m */,
+				AE2347C50F6D74A8003C6025 /* MGTwitterRequestTypes.h */,
+				AE2347C60F6D74A8003C6025 /* MGTwitterParserDelegate.h */,
+				AE2347B40F6D74A8003C6025 /* Twitter NSXML Parsers */,
+				AE2347AF0F6D74A8003C6025 /* Categories */,
+			);
+			name = MATwitterEngine;
+			sourceTree = "<group>";
+		};
+		AE2347AF0F6D74A8003C6025 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AE2347B00F6D74A8003C6025 /* NSString+UUID.h */,
+				AE2347B10F6D74A8003C6025 /* NSString+UUID.m */,
+				AE2347B20F6D74A8003C6025 /* NSData+Base64.h */,
+				AE2347B30F6D74A8003C6025 /* NSData+Base64.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		AE2347B40F6D74A8003C6025 /* Twitter NSXML Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				AE2347B50F6D74A8003C6025 /* MGTwitterXMLParser.h */,
+				AE2347B60F6D74A8003C6025 /* MGTwitterXMLParser.m */,
+				AE2347B70F6D74A8003C6025 /* MGTwitterStatusesParser.h */,
+				AE2347B80F6D74A8003C6025 /* MGTwitterStatusesParser.m */,
+				AE2347B90F6D74A8003C6025 /* MGTwitterUsersParser.h */,
+				AE2347BA0F6D74A8003C6025 /* MGTwitterUsersParser.m */,
+				AE2347BB0F6D74A8003C6025 /* MGTwitterMessagesParser.h */,
+				AE2347BC0F6D74A8003C6025 /* MGTwitterMessagesParser.m */,
+				AE2347BD0F6D74A8003C6025 /* MGTwitterMiscParser.h */,
+				AE2347BE0F6D74A8003C6025 /* MGTwitterMiscParser.m */,
+			);
+			name = "Twitter NSXML Parsers";
+			sourceTree = "<group>";
+		};
+		AE2347D10F6D7533003C6025 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE2347D20F6D7533003C6025 /* DockView.h */,
+				AE2347D30F6D7533003C6025 /* DockView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		AEA828640F16AD0F0036F466 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AE17C0C00F73FFC400F8C4C8 /* tcard.png */,
+				AE2347D50F6D7548003C6025 /* robot.jpg */,
 				AEA828A30F16B0530036F466 /* bbcfour.gif */,
 				AEA828A40F16B0530036F466 /* bbcnews.gif */,
 				AEA828A50F16B0530036F466 /* bbcone.gif */,
@@ -230,12 +339,12 @@
 		AEA828880F16B0180036F466 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE215D4F0F16B3F0000E7B70 /* Schedule.h */,
-				AE215D500F16B3F0000E7B70 /* Schedule.m */,
-				AE215D510F16B3F0000E7B70 /* Service.h */,
-				AE215D520F16B3F0000E7B70 /* Service.m */,
-				AE215D530F16B3F0000E7B70 /* Broadcast.h */,
-				AE215D540F16B3F0000E7B70 /* Broadcast.m */,
+				AE2347D70F6D759F003C6025 /* Broadcast.h */,
+				AE2347D80F6D759F003C6025 /* Broadcast.m */,
+				AE2347D90F6D759F003C6025 /* Schedule.h */,
+				AE2347DA0F6D759F003C6025 /* Schedule.m */,
+				AE2347DB0F6D759F003C6025 /* Service.h */,
+				AE2347DC0F6D759F003C6025 /* Service.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -243,12 +352,12 @@
 		AEA828920F16B0180036F466 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE215D2A0F16B201000E7B70 /* EmpViewController.h */,
-				AE215D2B0F16B201000E7B70 /* EmpViewController.m */,
-				AE215D2C0F16B201000E7B70 /* MainWindowController.h */,
-				AE215D2D0F16B201000E7B70 /* MainWindowController.m */,
 				AEA828930F16B0180036F466 /* AppController.h */,
 				AEA828940F16B0180036F466 /* AppController.m */,
+				AE215D2C0F16B201000E7B70 /* MainWindowController.h */,
+				AE215D2D0F16B201000E7B70 /* MainWindowController.m */,
+				AE215D2A0F16B201000E7B70 /* EmpViewController.h */,
+				AE215D2B0F16B201000E7B70 /* EmpViewController.m */,
 				AEA828990F16B0180036F466 /* PreferencesWindowController.h */,
 				AEA8289A0F16B0180036F466 /* PreferencesWindowController.m */,
 			);
@@ -309,7 +418,6 @@
 				AEA828B00F16B0530036F466 /* cbbc.gif in Resources */,
 				AEA828B10F16B0530036F466 /* cbeebies.gif in Resources */,
 				AEA828B20F16B0530036F466 /* parliament.gif in Resources */,
-				AEA828B70F16B0710036F466 /* radio.icns in Resources */,
 				AEA828B80F16B0710036F466 /* dsa_pub.pem in Resources */,
 				AEA828BA0F16B0710036F466 /* Growl Registration Ticket.growlRegDict in Resources */,
 				AEA828BC0F16B0990036F466 /* Defaults.plist in Resources */,
@@ -318,7 +426,11 @@
 				AEA828C20F16B0AE0036F466 /* Preferences.xib in Resources */,
 				AE215D6F0F16B48A000E7B70 /* live.html in Resources */,
 				AE215D700F16B48A000E7B70 /* emp.html in Resources */,
-				AEF5A70D0F18CAC2000A57AC /* television.icns in Resources */,
+				AE2347D60F6D7548003C6025 /* robot.jpg in Resources */,
+				AEE32E1D0F702F5A0049E25F /* Credits.rtf in Resources */,
+				AE731D210F72929A00678169 /* tellybox-on.icns in Resources */,
+				AE17C0C10F73FFC400F8C4C8 /* tcard.png in Resources */,
+				AE17C0E90F74069D00F8C4C8 /* tellybox.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,9 +447,19 @@
 				AEA828A20F16B0180036F466 /* PreferencesWindowController.m in Sources */,
 				AE215D2E0F16B201000E7B70 /* EmpViewController.m in Sources */,
 				AE215D2F0F16B201000E7B70 /* MainWindowController.m in Sources */,
-				AE215D550F16B3F0000E7B70 /* Schedule.m in Sources */,
-				AE215D560F16B3F0000E7B70 /* Service.m in Sources */,
-				AE215D570F16B3F0000E7B70 /* Broadcast.m in Sources */,
+				AE2347C80F6D74A8003C6025 /* NSString+UUID.m in Sources */,
+				AE2347C90F6D74A8003C6025 /* NSData+Base64.m in Sources */,
+				AE2347CA0F6D74A8003C6025 /* MGTwitterXMLParser.m in Sources */,
+				AE2347CB0F6D74A8003C6025 /* MGTwitterStatusesParser.m in Sources */,
+				AE2347CC0F6D74A8003C6025 /* MGTwitterUsersParser.m in Sources */,
+				AE2347CD0F6D74A8003C6025 /* MGTwitterMessagesParser.m in Sources */,
+				AE2347CE0F6D74A8003C6025 /* MGTwitterMiscParser.m in Sources */,
+				AE2347CF0F6D74A8003C6025 /* MGTwitterEngine.m in Sources */,
+				AE2347D00F6D74A8003C6025 /* MGTwitterHTTPURLConnection.m in Sources */,
+				AE2347D40F6D7533003C6025 /* DockView.m in Sources */,
+				AE2347DD0F6D759F003C6025 /* Broadcast.m in Sources */,
+				AE2347DE0F6D759F003C6025 /* Schedule.m in Sources */,
+				AE2347DF0F6D759F003C6025 /* Service.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

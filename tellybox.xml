@@ -6,12 +6,12 @@
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
-            <title>Version 1.3 (Window Resize)</title>
+            <title>Version 1.4 (Twitter, Scheduling, and new icon)</title>
 						<sparkle:releaseNotesLink>
-              http://github.com/whomwah/tellybox/raw/1.3/CHANGELOG
+              http://github.com/whomwah/tellybox/raw/1.4/CHANGELOG
 						</sparkle:releaseNotesLink>
-            <pubDate>Mon, 23 Feb 2009 10:15:00 +0000</pubDate>
-            <enclosure url="http://github.com/whomwah/tellybox/raw/1.3/releases/1.0/TellyBox.dmg" sparkle:version="1.3" length="940526" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCOu2EqHQ2Yu/5tYZAIXIWEdUmxtQIUYs1t/o0eTWzBdlhxTY1i31tHpZo=" />
+            <pubDate>Sun, 22 Mar 2009 14:00:00 +0000</pubDate>
+            <enclosure url="http://github.com/whomwah/tellybox/raw/1.4/releases/1.0/TellyBox.dmg" sparkle:version="1.4" length="1311068" type="application/octet-stream" sparkle:dsaSignature="MC0CFFkiPcO0ZCc0DwJy9MxDmYcDMaq3AhUAuqhbIqurJpmzEgl1SrNF4vtSmSc=" />
          </item>
    </channel>
 </rss>

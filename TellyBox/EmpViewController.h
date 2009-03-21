@@ -1,6 +1,6 @@
 //
 //  EmpViewController.h
-//  Telly
+//  TellyBox
 //
 //  Created by Duncan Robertson on 15/12/2008.
 //  Copyright 2008 Whomwah. All rights reserved.
@@ -11,21 +11,26 @@
 
 @interface EmpViewController : NSViewController {
   IBOutlet WebView *empView;
-  NSString *displayTitle;
-  NSString *serviceKey;
-  NSString *playbackFormat;
-  NSString *playbackKey;
+  NSDictionary *data;
+  NSString *markup;
+  NSMutableArray *viewSizes;
 }
 
-@property (nonatomic,copy) NSString *displayTitle;
-@property (nonatomic,copy) NSString *serviceKey;
-@property (nonatomic,copy) NSString *playbackFormat;
-@property (nonatomic,copy) NSString *playbackKey;
+@property (nonatomic, retain) NSMutableArray *viewSizes;
 
-- (void)resizeEmpTo:(NSSize)size;
-- (void)fetchEmp:(NSString *)keyString;
+- (BOOL)isLive;
 - (void)makeRequest;
-- (NSString *)buildEmpHtml;
+- (NSSize)defaultSize;
+- (NSSize)normalSize;
+- (NSSize)minimumSize;
+- (NSSize)maximumSize;
+- (NSString *)playbackFormat;
+- (NSSize)sizeForEmp:(int)index;
+- (int)intForEmpWithSize:(NSSize)size;
+- (void)resizeEmpTo:(NSSize)size;
+- (void)startBuildingEmp:(NSString *)key;
+- (void)fetchLIVE:(NSDictionary *)d;
+- (void)fetchCATCHUP:(NSString *)str;
 - (void)fetchErrorMessage:(WebView *)sender;
 - (void)alertDidEnd:(NSAlert *)alert returnCode:(int)returnCode contextInfo:(void *)contextInfo;
 - (void)webView:(WebView *)sender didStartProvisionalLoadForFrame:(WebFrame *)frame;

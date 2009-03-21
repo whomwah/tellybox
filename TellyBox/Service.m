@@ -1,6 +1,5 @@
 //
 //  Service.m
-//  Telly
 //
 //  Created by Duncan Robertson on 06/01/2009.
 //  Copyright 2009 Whomwah. All rights reserved.
@@ -11,9 +10,7 @@
 
 @implementation Service
 
-@synthesize key, title, desc;
-@synthesize outletKey, outletTitle, outletDesc;
-@synthesize displayTitle;
+@synthesize key, title, desc, outletKey, outletTitle, outletDesc;
 
 -(id)init
 {
@@ -40,13 +37,16 @@
   [self setOutletTitle:[NSString stringForXPath:@"outlet/title" ofNode:node]];
   [self setOutletKey:[NSString stringForXPath:@"outlet/@key" ofNode:node]];
   
-  if ([self outletTitle]) {
-    [self setDisplayTitle:[NSString stringWithFormat:@"%@ %@", [self title], [self outletTitle]]];
-  } else {
-    [self setDisplayTitle:[self title]];
-  }
-  
   return self;
+}
+
+- (NSString *)displayTitle
+{
+  if ([self outletTitle]) {
+    return [NSString stringWithFormat:@"%@ %@", self.title, self.outletTitle];
+  } else {
+    return self.title;
+  }
 }
 
 @end
