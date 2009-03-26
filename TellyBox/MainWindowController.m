@@ -8,10 +8,10 @@
 
 #import "MainWindowController.h"
 #import "EmpViewController.h"
-#import "Broadcast.h"
-#import "Schedule.h"
+#import "BBCBroadcast.h"
+#import "BBCSchedule.h"
 #import "DockView.h"
-#import "PWord.h"
+#import "pw_TvAndRadioBotPassword.h"
 
 @implementation MainWindowController
 
@@ -55,7 +55,7 @@
   twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
   [twitterEngine setUsername:username password:password];
   [twitterEngine setClientName:@"TellyBox" 
-                       version:@"1.4" 
+                       version:@"1.5" 
                            URL:@"http://whomwah.github.com/tellybox" 
                          token:@"tellybox"];
 }
@@ -81,12 +81,13 @@
 - (void)fetchEMP:(id)sender
 {
   [self stopScheduleTimer];
-  Broadcast *broadcast = [[currentSchedule broadcasts] objectAtIndex:[sender tag]];
+  BBCBroadcast *broadcast = [[currentSchedule broadcasts] objectAtIndex:[sender tag]];
   currentBroadcast = broadcast;  
   
   self.windowTitle = [currentSchedule broadcastDisplayTitleForIndex:[sender tag]];
   [empViewController fetchCATCHUP:[broadcast pid]];
   [self changeDockNetworkIcon];
+  [self buildScheduleMenu];
   [self growl];
 }
 
@@ -127,8 +128,8 @@
 - (void)fetchNewSchedule:(id)sender
 {  
   [currentSchedule removeObserver:self forKeyPath:@"broadcasts"];
-  Schedule *sc = [[Schedule alloc] initUsingService:[currentStation objectForKey:@"key"] 
-                                             outlet:[currentStation objectForKey:@"outlet"]];
+  BBCSchedule *sc = [[BBCSchedule alloc] initUsingService:[currentStation objectForKey:@"key"] 
+                                                   outlet:[currentStation objectForKey:@"outlet"]];
   [sc fetchScheduleForDate:[NSDate date]];
   
   self.currentSchedule = sc;
@@ -193,10 +194,9 @@
   NSString *newTweet = [self createTweet];
   NSLog(@"checking");
   if ([newTweet isEqualToString:oldTweet] && ((currentBroadcast && [empViewController isLive]) || ![empViewController isLive])) {
-    NSLog(@"tweeting: %@", newTweet);
     [twitterEngine sendUpdate:newTweet];
     NSImage *twitter_logo = [NSImage imageNamed:@"robot"];
-    [GrowlApplicationBridge notifyWithTitle:@"Sending to Twitter"
+    [GrowlApplicationBridge notifyWithTitle:@"Sending to @radioandtvbot on Twitter.com"
                                 description:newTweet
                            notificationName:@"Send to Twitter"
                                    iconData:[twitter_logo TIFFRepresentation]
@@ -335,39 +335,56 @@
 {
   NSMenuItem *newItem;
   NSString *start;
-  NSMutableString *label;
   NSMenu *scheduleMenu = [[[NSApp mainMenu] itemWithTitle:@"Schedule"] submenu];  
-  NSFont *font = [NSFont userFontOfSize:13.0];
-  NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];
   [self clearMenu:scheduleMenu];
   int count = 0;
   
-  for (Broadcast *broadcast in [currentSchedule broadcasts]) {
+  for (BBCBroadcast *broadcast in [currentSchedule broadcasts]) {
     
     start = [[broadcast bStart] descriptionWithCalendarFormat:@"%H:%M" timeZone:nil locale:nil];
-    label = [NSMutableString stringWithFormat:@"%@ %@", start, [broadcast displayTitle]];
     newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"" 
                                                                    action:NULL 
                                                             keyEquivalent:@""];
-    if ([broadcast availableText]) {
-      [label appendFormat:@" (%@)", [broadcast availableText]];
-      [newItem setAction:@selector(fetchEMP:)];
+    NSMutableString *str = [NSMutableString stringWithFormat:@"%@ %@", start, [broadcast displayTitle]];
+    NSString *state = @"";
+    
+    if ([broadcast isEqual:currentBroadcast] == YES) {
+      state = @" NOW PLAYING";
+      [newItem setState:NSOnState];
+    } else if ([broadcast tvAvailability]) {
+      [newItem setAction:@selector(fetchEMP:)]; 
+    } else if ([broadcast isEqual:[currentSchedule currBroadcast]] == YES) {
+      state = @" LIVE";
+      [newItem setAction:@selector(refreshStation:)];
     }
     
-    NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:label
-                                                                     attributes:attrsDictionary];
+    [str appendString:state];
+    NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:str];
     
-    [newItem setAttributedTitle:attrString];
+    [string addAttribute:NSFontAttributeName
+                   value:[NSFont userFontOfSize:13.6]
+                   range:NSMakeRange(0,[start length])];
+    
+    [string addAttribute:NSFontAttributeName
+                   value:[NSFont userFontOfSize:13.6]
+                   range:NSMakeRange([start length]+1,[[broadcast displayTitle] length])];
+    
+    [string addAttribute:NSForegroundColorAttributeName
+                   value:[NSColor lightGrayColor]
+                   range:NSMakeRange(1+[start length]+[[broadcast displayTitle] length],[state length])];
+    
+    [string addAttribute:NSFontAttributeName
+                   value:[NSFont userFontOfSize:9]
+                   range:NSMakeRange(1+[start length]+[[broadcast displayTitle] length],[state length])];
+    
+    [newItem setAttributedTitle:string];
     [newItem setEnabled:YES];
     [newItem setTag:count];
-    if ([broadcast isEqual:currentBroadcast] == YES) {
-      [newItem setState:NSOnState];
-    }
     [newItem setEnabled:YES];
     [newItem setTarget:self];
     [scheduleMenu addItem:newItem];
     [newItem release];
-    [attrString release];
+    [string release];
     count++;
   }
 }
@@ -383,6 +400,15 @@
 }
 
 #pragma mark Main Window delegate
+
+- (void)windowDidResignMain:(NSNotification *)notification
+{
+  if ([[NSUserDefaults standardUserDefaults] boolForKey:@"DefaultAlwaysOnTop"] == YES) {
+    [[self window] setLevel:NSMainMenuWindowLevel];
+  } else {
+    [[self window] setLevel:NSNormalWindowLevel];
+  }
+}
 
 - (NSSize)windowWillResize:(NSWindow *)window toSize:(NSSize)proposedFrameSize
 {

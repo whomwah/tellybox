@@ -37,6 +37,8 @@
 	</array>
 	<key>DefaultEmpOrigin</key>
 	<string>{200, 200}</string>
+	<key>DefaultAlwaysOnTop</key>
+	<true/>
 	<key>DefaultEmpSize</key>
 	<integer>0</integer>
 	<key>DefaultSendToTwitter</key>

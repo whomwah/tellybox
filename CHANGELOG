@@ -1,3 +1,16 @@
+*1.5.0* (Mar 26th, 2009)
+
+* the schedule menu has been updated to
+  correctly display what broadcast you are
+  listening to, live or listen again. Also 
+  if you are listening to a show again 
+  the schedule will indicate this as well 
+  as letting you see and select what is 
+  currently playing live on that particular 
+  network
+* keeping the app always on top can now 
+  be done via the preferences menu
+
 *1.4.0* (Mar 22st, 2009)
 
 * New icon. Thanks to David Wilson

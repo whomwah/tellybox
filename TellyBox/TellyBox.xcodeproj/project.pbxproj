@@ -30,11 +30,11 @@
 		AE2347D00F6D74A8003C6025 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347C40F6D74A8003C6025 /* MGTwitterHTTPURLConnection.m */; };
 		AE2347D40F6D7533003C6025 /* DockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347D30F6D7533003C6025 /* DockView.m */; };
 		AE2347D60F6D7548003C6025 /* robot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE2347D50F6D7548003C6025 /* robot.jpg */; };
-		AE2347DD0F6D759F003C6025 /* Broadcast.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347D80F6D759F003C6025 /* Broadcast.m */; };
-		AE2347DE0F6D759F003C6025 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347DA0F6D759F003C6025 /* Schedule.m */; };
-		AE2347DF0F6D759F003C6025 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2347DC0F6D759F003C6025 /* Service.m */; };
+		AE3FF5B40F7A247C006C8B21 /* BBCBroadcast.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3FF5AC0F7A247C006C8B21 /* BBCBroadcast.m */; };
+		AE3FF5B50F7A247C006C8B21 /* BBCSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3FF5AE0F7A247C006C8B21 /* BBCSchedule.m */; };
+		AE3FF5B60F7A247C006C8B21 /* BBCService.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3FF5B00F7A247C006C8B21 /* BBCService.m */; };
+		AE3FF5B70F7A247C006C8B21 /* DRNSString-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3FF5B30F7A247C006C8B21 /* DRNSString-Utilities.m */; };
 		AE731D210F72929A00678169 /* tellybox-on.icns in Resources */ = {isa = PBXBuildFile; fileRef = AE731D200F72929A00678169 /* tellybox-on.icns */; };
-		AEA828870F16B0070036F466 /* NSString-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA828860F16B0070036F466 /* NSString-Utilities.m */; };
 		AEA8289F0F16B0180036F466 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA828940F16B0180036F466 /* AppController.m */; };
 		AEA828A20F16B0180036F466 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA8289A0F16B0180036F466 /* PreferencesWindowController.m */; };
 		AEA828AB0F16B0530036F466 /* bbcfour.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA828A30F16B0530036F466 /* bbcfour.gif */; };
@@ -111,19 +111,19 @@
 		AE2347C40F6D74A8003C6025 /* MGTwitterHTTPURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterHTTPURLConnection.m; sourceTree = "<group>"; };
 		AE2347C50F6D74A8003C6025 /* MGTwitterRequestTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterRequestTypes.h; sourceTree = "<group>"; };
 		AE2347C60F6D74A8003C6025 /* MGTwitterParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterParserDelegate.h; sourceTree = "<group>"; };
-		AE2347C70F6D74A8003C6025 /* PWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWord.h; sourceTree = "<group>"; };
 		AE2347D20F6D7533003C6025 /* DockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockView.h; sourceTree = "<group>"; };
 		AE2347D30F6D7533003C6025 /* DockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DockView.m; sourceTree = "<group>"; };
 		AE2347D50F6D7548003C6025 /* robot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robot.jpg; sourceTree = "<group>"; };
-		AE2347D70F6D759F003C6025 /* Broadcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broadcast.h; sourceTree = "<group>"; };
-		AE2347D80F6D759F003C6025 /* Broadcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broadcast.m; sourceTree = "<group>"; };
-		AE2347D90F6D759F003C6025 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
-		AE2347DA0F6D759F003C6025 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
-		AE2347DB0F6D759F003C6025 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
-		AE2347DC0F6D759F003C6025 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		AE3FF4D20F7A1DF3006C8B21 /* pw_TvAndRadioBotPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pw_TvAndRadioBotPassword.h; path = "../../code.whomwah.com/public/objective-c/pw_TvAndRadioBotPassword.h"; sourceTree = SOURCE_ROOT; };
+		AE3FF5AB0F7A247C006C8B21 /* BBCBroadcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCBroadcast.h; sourceTree = "<group>"; };
+		AE3FF5AC0F7A247C006C8B21 /* BBCBroadcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCBroadcast.m; sourceTree = "<group>"; };
+		AE3FF5AD0F7A247C006C8B21 /* BBCSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCSchedule.h; sourceTree = "<group>"; };
+		AE3FF5AE0F7A247C006C8B21 /* BBCSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCSchedule.m; sourceTree = "<group>"; };
+		AE3FF5AF0F7A247C006C8B21 /* BBCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCService.h; sourceTree = "<group>"; };
+		AE3FF5B00F7A247C006C8B21 /* BBCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCService.m; sourceTree = "<group>"; };
+		AE3FF5B20F7A247C006C8B21 /* DRNSString-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DRNSString-Utilities.h"; sourceTree = "<group>"; };
+		AE3FF5B30F7A247C006C8B21 /* DRNSString-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DRNSString-Utilities.m"; sourceTree = "<group>"; };
 		AE731D200F72929A00678169 /* tellybox-on.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "tellybox-on.icns"; sourceTree = "<group>"; };
-		AEA828850F16B0070036F466 /* NSString-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-Utilities.h"; sourceTree = "<group>"; };
-		AEA828860F16B0070036F466 /* NSString-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-Utilities.m"; sourceTree = "<group>"; };
 		AEA828930F16B0180036F466 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		AEA828940F16B0180036F466 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		AEA828990F16B0180036F466 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
@@ -196,8 +196,6 @@
 			children = (
 				AE2347AD0F6D74A8003C6025 /* Classes */,
 				AEA828640F16AD0F0036F466 /* Images */,
-				AEA828840F16B0070036F466 /* Categories */,
-				AEA828880F16B0180036F466 /* Models */,
 				AE2347D10F6D7533003C6025 /* Views */,
 				AEA828920F16B0180036F466 /* Controllers */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -250,7 +248,8 @@
 		AE2347AD0F6D74A8003C6025 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AE2347C70F6D74A8003C6025 /* PWord.h */,
+				AE3FF5AA0F7A247C006C8B21 /* BBCProgrammes */,
+				AE3FF4D20F7A1DF3006C8B21 /* pw_TvAndRadioBotPassword.h */,
 				AE2347AE0F6D74A8003C6025 /* MATwitterEngine */,
 			);
 			name = Classes;
@@ -310,6 +309,30 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		AE3FF5AA0F7A247C006C8B21 /* BBCProgrammes */ = {
+			isa = PBXGroup;
+			children = (
+				AE3FF5AB0F7A247C006C8B21 /* BBCBroadcast.h */,
+				AE3FF5AC0F7A247C006C8B21 /* BBCBroadcast.m */,
+				AE3FF5AD0F7A247C006C8B21 /* BBCSchedule.h */,
+				AE3FF5AE0F7A247C006C8B21 /* BBCSchedule.m */,
+				AE3FF5AF0F7A247C006C8B21 /* BBCService.h */,
+				AE3FF5B00F7A247C006C8B21 /* BBCService.m */,
+				AE3FF5B10F7A247C006C8B21 /* Categories */,
+			);
+			name = BBCProgrammes;
+			path = "../../code.whomwah.com/public/objective-c/BBCProgrammes";
+			sourceTree = SOURCE_ROOT;
+		};
+		AE3FF5B10F7A247C006C8B21 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AE3FF5B20F7A247C006C8B21 /* DRNSString-Utilities.h */,
+				AE3FF5B30F7A247C006C8B21 /* DRNSString-Utilities.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		AEA828640F16AD0F0036F466 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,28 +348,6 @@
 				AEA828AA0F16B0530036F466 /* parliament.gif */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		AEA828840F16B0070036F466 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				AEA828850F16B0070036F466 /* NSString-Utilities.h */,
-				AEA828860F16B0070036F466 /* NSString-Utilities.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
-		AEA828880F16B0180036F466 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				AE2347D70F6D759F003C6025 /* Broadcast.h */,
-				AE2347D80F6D759F003C6025 /* Broadcast.m */,
-				AE2347D90F6D759F003C6025 /* Schedule.h */,
-				AE2347DA0F6D759F003C6025 /* Schedule.m */,
-				AE2347DB0F6D759F003C6025 /* Service.h */,
-				AE2347DC0F6D759F003C6025 /* Service.m */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		AEA828920F16B0180036F466 /* Controllers */ = {
@@ -442,7 +443,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				AEA828870F16B0070036F466 /* NSString-Utilities.m in Sources */,
 				AEA8289F0F16B0180036F466 /* AppController.m in Sources */,
 				AEA828A20F16B0180036F466 /* PreferencesWindowController.m in Sources */,
 				AE215D2E0F16B201000E7B70 /* EmpViewController.m in Sources */,
@@ -457,9 +457,10 @@
 				AE2347CF0F6D74A8003C6025 /* MGTwitterEngine.m in Sources */,
 				AE2347D00F6D74A8003C6025 /* MGTwitterHTTPURLConnection.m in Sources */,
 				AE2347D40F6D7533003C6025 /* DockView.m in Sources */,
-				AE2347DD0F6D759F003C6025 /* Broadcast.m in Sources */,
-				AE2347DE0F6D759F003C6025 /* Schedule.m in Sources */,
-				AE2347DF0F6D759F003C6025 /* Service.m in Sources */,
+				AE3FF5B40F7A247C006C8B21 /* BBCBroadcast.m in Sources */,
+				AE3FF5B50F7A247C006C8B21 /* BBCSchedule.m in Sources */,
+				AE3FF5B60F7A247C006C8B21 /* BBCService.m in Sources */,
+				AE3FF5B70F7A247C006C8B21 /* DRNSString-Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
