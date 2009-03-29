@@ -340,8 +340,8 @@
   int count = 0;
   
   for (BBCBroadcast *broadcast in [currentSchedule broadcasts]) {
-    
     start = [[broadcast bStart] descriptionWithCalendarFormat:@"%H:%M" timeZone:nil locale:nil];
+    
     newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"" 
                                                                    action:NULL 
                                                             keyEquivalent:@""];

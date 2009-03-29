@@ -10,6 +10,8 @@
 
 @implementation EmpViewController
 
+//config_settings_bitrateFloor=0&amp;config_settings_bitrateCeiling=800&amp;
+
 @synthesize viewSizes;
 
 - (void)awakeFromNib
