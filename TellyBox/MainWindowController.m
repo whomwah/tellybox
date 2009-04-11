@@ -350,12 +350,12 @@
     
     if ([broadcast isEqual:currentBroadcast] == YES) {
       state = @" NOW PLAYING";
-      [newItem setState:NSOnState];
-    } else if ([broadcast tvAvailability]) {
-      [newItem setAction:@selector(fetchEMP:)]; 
+      [newItem setState:NSOnState]; 
     } else if ([broadcast isEqual:[currentSchedule currBroadcast]] == YES) {
       state = @" LIVE";
       [newItem setAction:@selector(refreshStation:)];
+    } else if ([broadcast tvAvailability]) {
+      [newItem setAction:@selector(fetchEMP:)];
     }
     
     [str appendString:state];
@@ -404,10 +404,15 @@
 - (void)windowDidResignMain:(NSNotification *)notification
 {
   if ([[NSUserDefaults standardUserDefaults] boolForKey:@"DefaultAlwaysOnTop"] == YES) {
-    [[self window] setLevel:NSMainMenuWindowLevel];
+    [[self window] setLevel:NSFloatingWindowLevel];
   } else {
     [[self window] setLevel:NSNormalWindowLevel];
   }
+}
+
+- (void)windowDidBecomeMain:(NSNotification *)notification
+{
+  [[self window] setLevel:NSNormalWindowLevel];
 }
 
 - (NSSize)windowWillResize:(NSWindow *)window toSize:(NSSize)proposedFrameSize

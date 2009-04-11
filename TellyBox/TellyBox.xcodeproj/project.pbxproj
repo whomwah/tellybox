@@ -54,6 +54,9 @@
 		AEA828D00F16B0BE0036F466 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828CE0F16B0BE0036F466 /* Growl.framework */; };
 		AEA828D10F16B0BE0036F466 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828CF0F16B0BE0036F466 /* Sparkle.framework */; };
 		AEA828FB0F16B0D00036F466 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA828FA0F16B0D00036F466 /* WebKit.framework */; };
+		AED628330F81352B00E2AC2A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AED6282E0F81352B00E2AC2A /* LICENSE.txt */; };
+		AED628340F81352B00E2AC2A /* NSCalendarDate+ISO8601Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = AED628300F81352B00E2AC2A /* NSCalendarDate+ISO8601Parsing.m */; };
+		AED628350F81352B00E2AC2A /* NSCalendarDate+ISO8601Unparsing.m in Sources */ = {isa = PBXBuildFile; fileRef = AED628320F81352B00E2AC2A /* NSCalendarDate+ISO8601Unparsing.m */; };
 		AEE32E1D0F702F5A0049E25F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AEE32E1C0F702F5A0049E25F /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +148,11 @@
 		AEA828CE0F16B0BE0036F466 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		AEA828CF0F16B0BE0036F466 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		AEA828FA0F16B0D00036F466 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		AED6282E0F81352B00E2AC2A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AED6282F0F81352B00E2AC2A /* NSCalendarDate+ISO8601Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendarDate+ISO8601Parsing.h"; sourceTree = "<group>"; };
+		AED628300F81352B00E2AC2A /* NSCalendarDate+ISO8601Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendarDate+ISO8601Parsing.m"; sourceTree = "<group>"; };
+		AED628310F81352B00E2AC2A /* NSCalendarDate+ISO8601Unparsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendarDate+ISO8601Unparsing.h"; sourceTree = "<group>"; };
+		AED628320F81352B00E2AC2A /* NSCalendarDate+ISO8601Unparsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendarDate+ISO8601Unparsing.m"; sourceTree = "<group>"; };
 		AEE32E1C0F702F5A0049E25F /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +256,7 @@
 		AE2347AD0F6D74A8003C6025 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AED6282D0F81352B00E2AC2A /* ISO-8601-parser-0.4 */,
 				AE3FF5AA0F7A247C006C8B21 /* BBCProgrammes */,
 				AE3FF4D20F7A1DF3006C8B21 /* pw_TvAndRadioBotPassword.h */,
 				AE2347AE0F6D74A8003C6025 /* MATwitterEngine */,
@@ -365,6 +374,19 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		AED6282D0F81352B00E2AC2A /* ISO-8601-parser-0.4 */ = {
+			isa = PBXGroup;
+			children = (
+				AED6282E0F81352B00E2AC2A /* LICENSE.txt */,
+				AED6282F0F81352B00E2AC2A /* NSCalendarDate+ISO8601Parsing.h */,
+				AED628300F81352B00E2AC2A /* NSCalendarDate+ISO8601Parsing.m */,
+				AED628310F81352B00E2AC2A /* NSCalendarDate+ISO8601Unparsing.h */,
+				AED628320F81352B00E2AC2A /* NSCalendarDate+ISO8601Unparsing.m */,
+			);
+			name = "ISO-8601-parser-0.4";
+			path = "../../code.whomwah.com/public/objective-c/ISO-8601-parser-0.4";
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -432,6 +454,7 @@
 				AE731D210F72929A00678169 /* tellybox-on.icns in Resources */,
 				AE17C0C10F73FFC400F8C4C8 /* tcard.png in Resources */,
 				AE17C0E90F74069D00F8C4C8 /* tellybox.icns in Resources */,
+				AED628330F81352B00E2AC2A /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +484,8 @@
 				AE3FF5B50F7A247C006C8B21 /* BBCSchedule.m in Sources */,
 				AE3FF5B60F7A247C006C8B21 /* BBCService.m in Sources */,
 				AE3FF5B70F7A247C006C8B21 /* DRNSString-Utilities.m in Sources */,
+				AED628340F81352B00E2AC2A /* NSCalendarDate+ISO8601Parsing.m in Sources */,
+				AED628350F81352B00E2AC2A /* NSCalendarDate+ISO8601Unparsing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

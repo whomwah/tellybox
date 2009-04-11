@@ -6,12 +6,12 @@
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
-            <title>Version 1.6 (updated for summertime date change .. oops)</title>
+            <title>Version 1.7 (fix always-on-top)</title>
 						<sparkle:releaseNotesLink>
               http://github.com/whomwah/tellybox/raw/master/CHANGELOG
 						</sparkle:releaseNotesLink>
-            <pubDate>Sun, 29 Mar 2009 13:00:00 +0000</pubDate>
-            <enclosure url="http://cloud.github.com/downloads/whomwah/tellybox/TellyBox_1.6.dmg" sparkle:version="1.6" length="1315967" type="application/octet-stream" sparkle:dsaSignature="MCwCFH6tgOXs0SqWlgyh6gU03gNy8BbsAhRYDjLJ9GZiAvms/V6krq4jyl7I+Q==" />
+            <pubDate>Sat, 11 Apr 2009 17:00:00 +0000</pubDate>
+            <enclosure url="http://cloud.github.com/downloads/whomwah/tellybox/TellyBox_1.7.dmg" sparkle:version="1.7" length="1330898" type="application/octet-stream" sparkle:dsaSignature="MCwCFHnOPg/hFeJgUVfS7UeNDxwqjV/jAhR/jmd8jfj9S4BqgtVKiN/DMcAu/w==" />
          </item>
    </channel>
 </rss>
