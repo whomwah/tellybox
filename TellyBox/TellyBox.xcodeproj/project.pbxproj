@@ -91,7 +91,7 @@
 		AE215D2C0F16B201000E7B70 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
 		AE215D2D0F16B201000E7B70 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		AE215D6D0F16B48A000E7B70 /* live.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = live.html; sourceTree = "<group>"; };
-		AE215D6E0F16B48A000E7B70 /* emp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = emp.html; sourceTree = "<group>"; };
+		AE215D6E0F16B48A000E7B70 /* emp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = emp.html; sourceTree = "<group>"; wrapsLines = 1; };
 		AE2347B00F6D74A8003C6025 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
 		AE2347B10F6D74A8003C6025 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		AE2347B20F6D74A8003C6025 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };

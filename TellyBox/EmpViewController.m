@@ -92,7 +92,7 @@
 - (void)startBuildingEmp:(NSString *)key
 {
   [self resizeEmpTo:[self defaultSize]];
-  markup = [NSString stringWithFormat:[self tmpl], key, key, key];
+  markup = [NSString stringWithFormat:[self tmpl], key, key];
   [self makeRequest];
 }
 
