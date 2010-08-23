@@ -6,12 +6,12 @@
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
-            <title>Version 1.7 (fix always-on-top)</title>
+            <title>Version 1.8 (iPlayer update fix and speed up schedule fetching)</title>
 						<sparkle:releaseNotesLink>
               http://github.com/whomwah/tellybox/raw/master/CHANGELOG
 						</sparkle:releaseNotesLink>
-            <pubDate>Sat, 11 Apr 2009 17:00:00 +0000</pubDate>
-            <enclosure url="http://cloud.github.com/downloads/whomwah/tellybox/TellyBox_1.7.dmg" sparkle:version="1.7" length="1330898" type="application/octet-stream" sparkle:dsaSignature="MCwCFHnOPg/hFeJgUVfS7UeNDxwqjV/jAhR/jmd8jfj9S4BqgtVKiN/DMcAu/w==" />
+            <pubDate>Mon, 23 Aug 2010 16:20:00 +0000</pubDate>
+            <enclosure url="http://cloud.github.com/downloads/whomwah/tellybox/TellyBox_1.8.dmg" sparkle:version="1.8" length="1150498" type="application/octet-stream" sparkle:dsaSignature="MCwCFD9d7dL3PO7/E3kSNdZvHaG5CDueAhQ3oMeSYMSPCTyfVx3qz6kvWIv5EA==" />
          </item>
    </channel>
 </rss>
