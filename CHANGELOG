@@ -1,3 +1,8 @@
+*1.8.0* (Aug 23rd, 2010)
+
+* updated code to support new iplayer release
+* sped up sxhedule buy fetching json feed
+
 *1.7.0* (Mar 29th, 2009)
 
 * fixed always-on-top-bug
